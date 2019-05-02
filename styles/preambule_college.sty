@@ -1,0 +1,2834 @@
+% !TeX encoding = UTF-8
+% ----------------------------------------------------------------------------------------------------------------
+% Définition du package
+% ----------------------------------------------------------------------------------------------------------------
+\ProvidesPackage{styles/preambule_college}
+
+
+
+
+
+
+
+
+
+
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+%
+% PARTIE 1 : packages habituels du préambule (attention leur ordre d'apparition est important !)
+%
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Utilitaires nécessaires à d'autes packages
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{ifthen}					% Tests conditionnels
+\usepackage{calc}					% Faire des calculs algébriques dans \setcounter, 
+%									% \addtocounter, \setlength, et \addtolength
+\usepackage{etex}					% Disposer de suffisamment de counter, length...
+\usepackage{etoolbox}				% Divers outils, notamment \BeforeBeginEnvironment
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Fonctionnalités de base
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage[xindy]{imakeidx}		% Créer un index
+\usepackage{idxlayout}				% Configuration particulières de l'index
+\usepackage{geometry}      			% Redéfinir les dimensions de la page
+\usepackage{xparse}					% Permet de définir des arguments optionnels, version étoile... des commandes
+\usepackage{printlen}				% Permet d'afficher les valeurs de longueurs (length) dans le document final
+\uselengthunit{cm}					% Paramètre pour le paquet printlen
+% Rem : biblatex est appelé depuis preambule_personnalisation.sty pour pouvoir faire varier citestyle et bibstyle.
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Réglages de l'apparence générale du document
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{microtype}				% Pour les effets typographiques fins (protrusion et expansion)
+\usepackage{lscape}					% Faire varier l'orientation portrait/paysage dans un document
+\usepackage{fancyhdr}				% Personnaliser les en-tête et pieds-de-page
+\usepackage{setspace}				% Modifier l'interligne
+\usepackage{fancybox}				% Pour mettre des boite de toutes sortes autour de n'importe quoi
+\usepackage{boxedminipage}			% Faire une boîte autour des minipage
+\usepackage[dotinlabels]{titletoc}	% Redéfinir la présentation de la table des matières
+\usepackage{titlesec}				% Redéfinir la présentation des marques de section (chapter, section...)
+%\usepackage{chappg}					% Fait apparaître le nom du chapitre dans la numérotation des pages
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Paragraphes spéciaux
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{amsthm}					% Définition des structure de liste thm de l'AMS
+\usepackage{thmtools}				% Définiton plus fine des paragraphes spéciaux
+\usepackage{marginnote}				% Pour placer du contenu dans les marges
+\usepackage[framemethod=tikz]{mdframed}	% Pour faires des paragraphes encadrés sur plusieurs pages
+%\usepackage{minitoc}				% Créer des tables des matières par chapitres
+%									% ATTENTION : décommenté, il fait créer une dernière page vide inutile en
+%									% interférant avec caption....
+\usepackage[stable]{footmisc}		% Pour personnaliser les notes de bas de page et les notes en marge.
+\usepackage{csquotes}				% Pour citer du texte en respectant les guillemets propres à chaque langue
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Francisation du document
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{polyglossia}			% Paquet pour franciser le document (remplace Babel)
+\setmainlanguage{french}			% Option pour le choix principal de la langue
+\setotherlanguage{english}			% Option pour éviter des problèmes avec minted
+\usepackage{xunicode}				% Pour gérer les fontes de caractères avec XeLaTeX
+\usepackage{fontspec}				% Pour gérer les fontes de caractères avec XeLaTeX
+\usepackage{xltxtra}				% Pour gérer les fontes de caractères avec XeLaTeX
+\usepackage{datetime}				% Gérer les formats de temps, date, heure... 
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Gestion des graphiques, figures...
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{xcolor}					% Gérer les couleurs
+\usepackage{graphicx}				% Inclure des images
+\usepackage{caption}				% Pour personaliser les légendes des figures, tableaux et avec minipage
+\usepackage{subcaption}				% Pour les sous-figures, en remplacement de subfig et float
+\usepackage{pgf,tikz}				% Création de figures en TiKz, notamment pour l'import depuis GeoGebra
+\usetikzlibrary{arrows.meta}		% Complément à tikz pour faire de jolies flèches
+\usepackage{tikzscale}				% Permet l'appel de fichiers tikz depuis \includegraphics
+\usepackage{ccicons}				% Définir les icones Creative Commons
+\usepackage{bbding}					% Fonte de casseau supplémentaire
+\let\Cross\relax					% Pour éviter un clash avec marvosym
+\usepackage{marvosym}				% Fonte de casseau supplémentaire
+\usepackage{metalogo}				% Pour écrire TeX, LaTeX... correctement
+\usepackage{xltxtra}				% Pour écrire XeLaTeX correctement
+\usepackage [tikz]{bclogo}			% Pour avoir de jolis logos en couleurs et des boîtes
+\DeclareGraphicsRule{.mps}{eps}{*}{}  % Réglage pour que les logos (en metafont) soient traités comme des eps
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Gérer les listes et énumérations
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{expdlist}				% Aligner et couper des listes par un commentaire
+\usepackage[shortlabels,inline]{enumitem}	% Pour paramétrer facilement les listes
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Gérer la composition des tableaux
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{tabu}					% Pour parmaétrer finement les tableaux (il peut remplacer tous les autres)
+\usepackage{longtable}				% Tableaux sur plusieurs pages, accepte les \footnote{}
+\usepackage{multirow}     			% Fusionne les lignes des tableaux
+\usepackage{multicol}    			% Fusionne les colonnes des tableaux
+\usepackage{hhline}      			% Bordures améliorées dans les tableaux
+\usepackage{tabularx}    			% Tableaux avec otpimisation des largeurs de colonnes
+\usepackage{colortbl}     			% Mettre de la couleur dans des tableaux
+%									% Attention : rempli aussi les doubles barres horizontales
+\usepackage{booktabs}				% Pour la création de tables professionnelles type livres
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Composition en deux colonnes parallèles (e.g. un mot et sa traduction)
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{parallel}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Gestion des hyperliens cliquables et des références (appler hyperref en dernier pour éviter des problèmes)
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{nameref}
+\usepackage{hyperxmp}
+\usepackage[xetex]{hyperref} %,colorlinks=true,urlcolor=blue,hypertexnames=false
+\hypersetup{
+	bookmarks=true,					% show bookmarks bar?
+	unicode=false,					% non-Latin characters in Acrobat?s bookmarks
+%	pdftoolbar=true,				% show Acrobat?s toolbar?
+%	pdfmenubar=true,				% show Acrobat?s menu?
+%	pdffitwindow=false,				% window fit to page when opened
+%	pdfstartview={FitH},			% fits the width of the page to the window
+%	pdfcreator={Creator},			% creator of the document
+%	pdfproducer={Producer},			% producer of the document
+%	pdfnewwindow=true,				% links in new window
+	colorlinks=true,				% false: boxed links; true: colored links
+	linkcolor=red,					% color of internal links
+	citecolor=green,				% color of links to bibliography
+	filecolor=magenta,				% color of file links
+	urlcolor=blue					% color of external links
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Césure des URL
+% ----------------------------------------------------------------------------------------------------------------
+%Pour permettre de couper les urls après un "-"
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Gestion des nombres et des unités
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{siunitx}
+\sisetup{
+	output-decimal-marker={.},			% Fait apparaître une virgule décimale, notamment avec \num{...}
+	exponent-product = \cdot,			% Notation scientifique avec un . au lieu d'un x
+	inter-unit-product = \ensuremath{{ } \cdot { }}	% Notation des unités comme dans le "Formulaires et Tables"
+}
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Packages AMS et autres packages standard pour les maths
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{amsmath}				% Package de base de l'American Mathematical Society
+\usepackage{amssymb}				% Définition des symboles mathématiques de l'AMS
+%\usepackage{amsfonts}				% Définition des polices mathématiques de l'AMS
+%\usepackage{amsopn}					% Nom des opérateurs, \DeclareMathOperator de l'AMS
+\usepackage{mathtools}				% Corrections de bugs et symboles supplémentaires
+\usepackage{array}					% Extension de tabular en mode mathématique
+\usepackage{unicode-math}			% Pour charger les fontes mathématiques Unicode avec XeLaTeX
+\usepackage[d]{esvect}				% Pour faire facilement des flèches sur les vecteurs
+\usepackage{xfrac}					% Pour les fractions, notamment \sfrac{}
+\usepackage{cancel}					% Pour barrer des expressions
+\usepackage{braket}					% Défini \set, \Set et gère correctement la taille de | (sans \middle)
+\usepackage{IEEEtrantools}			% Pour l'alignement des équations
+\usepackage{tkz-tab}				% Pour faire des tableaux de signes ou de variations
+\usepackage{tcolorbox}				% Pour faire toutes sortes de boîtes sympa
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Informatique : packages pour la mise en forme de code
+%
+% A DÉCOMMENTER POUR L'INFORMATIQUE
+% ----------------------------------------------------------------------------------------------------------------
+\usepackage{minted}				% Pour la coloration syntaxique des langages de programmation
+\usepackage{listings}			% Variante pour la coloration syntaxique des langages de programmation
+\lstset{%						% Réglages pour listing
+	basicstyle=\ttfamily\small,
+	commentstyle=\itshape\ttfamily\small,
+	showspaces=false,
+	showstringspaces=false,
+	ndkeywordstyle=\color{black}\bfseries,
+	breaklines=true,
+	breakautoindent=true,
+	captionpos=t
+}
+% ----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+%
+% PARTIE 2 : commandes et raccourcis personnalisés
+%
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+% 2.1 BASE
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Mise en parallèle d'une image et d'un texte
+% ----------------------------------------------------------------------------------------------------------------
+\newlength{\txtWidth}
+\newlength{\figWidth}
+
+\newcommand{\txtfig}[3]{
+	\setlength\fboxsep{0pt}
+	\setlength{\txtWidth}{(\linewidth - \widthof{\quad}) * \real{#1}}
+	\setlength{\figWidth}{\linewidth - \widthof{\quad} - \txtWidth }
+	\noindent
+	\begin{minipage}[m]{\txtWidth}
+		{#2}
+	\end{minipage}% %N.B. le % est nécessaire pour éviter un espace inter-mot supplémentaire entre les minipages
+	\hfill
+	\begin{minipage}[m]{\figWidth}
+		\includegraphics[width=\linewidth]{{#3}}
+	\end{minipage}
+}
+
+\newcommand{\figtxt}[3]{
+	\setlength\fboxsep{0pt}
+	\setlength{\figWidth}{(\linewidth - \widthof{\quad}) * \real{#1}}
+	\setlength{\txtWidth}{\linewidth - \widthof{\quad} - \figWidth }
+	\noindent
+	\begin{minipage}[m]{\figWidth}
+		\includegraphics[width=\linewidth]{{#2}}
+	\end{minipage}% %N.B. le % est nécessaire pour éviter un espace inter-mot supplémentaire entre les minipages
+	\hfill
+	\begin{minipage}[m]{\txtWidth}
+		{#3}
+	\end{minipage}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Raccourcis pour les listes numérotées (redéfinis avec les \theenumi)
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\enuma}[1]{
+	\renewcommand\theenumi{\alph{enumi}}
+	\renewcommand\theenumii{\alph{enumii}}
+	\renewcommand\labelenumi{\theenumi)}
+	\renewcommand\labelenumii{\theenumii)}
+	\begin{enumerate}
+		{#1}
+	\end{enumerate}
+	\renewcommand\theenumi{\arabic{enumi}}
+	\renewcommand\theenumii{\arabic{enumii}}
+	\renewcommand\labelenumi{\theenumi)}
+	\renewcommand\labelenumii{\theenumii)}
+}
+
+\newcommand{\enum}[1]{
+	\renewcommand\theenumi{\arabic{enumi}}
+	\renewcommand\theenumii{\arabic{enumii}}
+	\renewcommand\labelenumi{\theenumi.}
+	\renewcommand\labelenumii{\theenumii.}
+	\begin{enumerate}
+		{#1}
+	\end{enumerate}
+	\renewcommand\theenumi{\arabic{enumi}}
+	\renewcommand\theenumii{\arabic{enumii}}
+	\renewcommand\labelenumi{\theenumi)}
+	\renewcommand\labelenumii{\theenumii)}
+}
+
+\newcommand{\enumpar}[1]{
+	\renewcommand\theenumi{\arabic{enumi}}
+	\renewcommand\theenumii{\arabic{enumii}}
+	\renewcommand\labelenumi{\theenumi)}
+	\renewcommand\labelenumii{\theenumii)}
+	\begin{enumerate}
+		{#1}
+	\end{enumerate}
+}
+
+\newcommand{\itemlist}[1]{
+	\begin{itemize}
+		{#1}
+	\end{itemize}
+}
+
+\newcommand{\itembul}[1]{
+	\renewcommand{\labelitemi}{ $\bullet$}
+	\begin{itemize}
+		{#1}
+	\end{itemize}
+	\renewcommand{\labelitemi}{\normalfont\bfseries\textendash}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Pour obliger à faire revenir à la ligne le début d'une liste dans un des paragraphes particuliers (PARTIE 3)
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\listtopsep}{
+	\leavevmode
+	\vspace*{-3.5ex}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Faire des paragraphes décalés (indentation)
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\decal}[1]{
+	\hspace{10pt}
+	\begin{minipage}[t]{\linewidth-10pt}
+		\parskip=6pt
+		{#1}
+	\end{minipage}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Citation
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\cit}[1]{
+	\begin{quote}
+		\textit{#1}
+	\end{quote}
+}
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Caractères dans une boîte
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\boxedchar}[1]{%
+	\:\tikz[inner sep=.75ex, baseline=-.75ex]{ \node[rectangle,thick,rounded corners=4pt,minimum width=.6cm,draw] {\footnotesize {\IEEEstrut #1}};}\:%
+}
+
+
+
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+% 2.2 MATHS
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Apparence des mots faisant l'objet d'une définition
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\emphdef}[1]{\emph{#1}}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Symboles maison
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\wideparen}[1]{\ensuremath{\overparen{#1}}} 	% Pour les arcs
+\renewcommand\logowidth{12pt}								% taille des logos bclogo
+\newcommand{\attention}{\raisebox{-.75ex}{\bcattention \ }}	% Signal attention de bclogo
+\newcommand{\nRe}{\ensuremath{\,\cancel{\Re} \,} }				% pas en relation avec
+\newcommand{\nsubset}{\ensuremath{\not \subset}}			% non inclus
+\newcommand{\nbot}{\ensuremath{\cancel{\bot}}}				% non perpendiculaire
+%\newcommand{\nLeftrightarrow}{\ensuremath{\,\not\!\Leftrightarrow}}	% non équivalent
+\newcommand{\vide}{\ensuremath{\diameter}}				% ensemble vide un peu plus joli...
+\newcommand{\ie}{\textrm{i.e. }} 							% id est (c'est-à-dire)
+\newcommand{\de}{\si{\degree}}								% ° avec le package siunitx
+\newcommand{\Hyp}{\tikz[inner sep=.25ex,baseline=-.75ex]{ \node[circle,draw,thick] {\footnotesize H};}}	% pour introduire une hypothèse
+\newcommand{\The}{\tikz[inner sep=.25ex,baseline=-.75ex]{ \node[circle,draw,thick] {\footnotesize T};}}	% pour introduire une thèse
+\newcommand{\Dem}{\tikz[inner sep=.25ex,baseline=-.75ex]{ \node[circle,draw,thick] {\footnotesize D};}}	% pour introduire une démonstration
+\newcommand{\nondef}{$\abs*{\;\vphantom{\frac{1}{1}}}$}		% non défini (dans les tableaux de signe)
+\newcommand{\e}{\mathrm{e}}									% fonction e (en romain)
+
+
+% Pour pouvoir utiliser \varparallel et \nvarparallel sans avoir à mettre son texte en palatino
+\DeclareSymbolFont{pxsymbolsC}{U}{pxsyc}{m}{n}
+\SetSymbolFont{pxsymbolsC}{bold}{U}{pxsyc}{bx}{n}
+\DeclareMathSymbol{\varparallel}{\mathrel}{pxsymbolsC}{09}
+\DeclareMathSymbol{\nvarparallel}{\mathrel}{pxsymbolsC}{11}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Overline bricolé pour avoir un peu plus d'espacement vertical sous la barre.
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\ovline}[1]{
+	\overline{{#1}\IEEEstrut[1.85ex]}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% "ou" pour deux résultats
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\ou}[3]{%
+	\begin{tikzpicture} [grow'=right, sibling distance=3.5ex,level distance=2em, baseline=-2.3pt]
+	\node {#1}%
+	[anchor = west]
+	child{
+		child[level distance =0, anchor=west]{
+			node[inner ysep=0] {#2}
+		}
+	}
+	child{
+		child[level distance =0]{
+			node[inner ysep=0] {#3}
+		}
+	};
+	\end{tikzpicture}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Raccourcis pour la notation en algèbre linéaire
+% ----------------------------------------------------------------------------------------------------------------
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}		% Valeur absolue avec le package mathtools
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}	% Norme avec le package 
+\newcommand{\ve}[1]{\vv{#1}}					% Flèche sur le vecteur avec le package esvect
+\newcommand{\Vdeux}{\ensuremath{\mathcal{V}_2}}		% Ensemble des vecteurs à deux composantes
+\newcommand{\Vtrois}{\ensuremath{\mathcal{V}_3}}	% Ensemble des vecteurs à trois composantes
+\newcommand{\Etrois}{\ensuremath{\mathcal{E}_3}}	% L'espace à trois dimensions
+\newcommand{\va}{\ensuremath{\ve{a}}}			% Vecteur a
+\newcommand{\vb}{\IEEEstrut[2.5ex]\ensuremath{\ve{b}}}	% Vecteur b
+\newcommand{\vc}{\ensuremath{\ve{c}}}			% Vecteur c
+\newcommand{\vd}{\IEEEstrut[2.5ex]\ensuremath{\ve{d}}}	% Vecteur d
+\newcommand{\vi}{\ensuremath{\ve{i}}}			% vecteur i
+\newcommand{\vj}{\ensuremath{\ve{j}}}			% vecteur j
+\newcommand{\vk}{\IEEEstrut[2.5ex]\ensuremath{\ve{k}}}	% vecteur k
+\newcommand{\vn}{\ensuremath{\ve{n}}}			% Vecteur n
+\newcommand{\vu}{\ensuremath{\ve{u}}}			% Vecteur u
+\newcommand{\vvv}{\ensuremath{\ve{v}}}			% Vecteur v (attention, \vv est déjà utilisé par esvect)
+\newcommand{\vo}{\IEEEstrut[2.5ex]\ensuremath{\ve{0}}}	% Vecteur nul
+\newcommand{\veu}{\ensuremath{\vv*{e}{1}}}		% Vecteur e1 avec \vv* de esvect
+\newcommand{\ved}{\ensuremath{\vv*{e}{2}}}		% Vecteur e2 avec \vv* de esvect
+\newcommand{\vet}{\ensuremath{\vv*{e}{3}}}		% Vecteur e3 avec \vv* de esvect
+\newcommand{\compd}[2]{ 						% Pour écrire les vecteurs à 2 composantes
+	\begin{pmatrix}
+		{#1}\\
+		{#2}\\
+	\end{pmatrix}
+}
+\newcommand{\compt}[3]{					% Pour écrire les vecteurs à 3 composantes
+	\begin{pmatrix}
+		{#1}\\
+		{#2}\\
+		{#3}
+	\end{pmatrix}
+}
+\newcommand{\comb}[3]{					% Pour écrire les vecteurs à 3 composantes entre crochets
+	\begin{bmatrix}
+		{#1}\\
+		{#2}\\
+		{#3}
+	\end{bmatrix}
+}
+\newcommand{\matd}[4]{					% Pour écrire les matrices 2x2
+	\begin{pmatrix}
+		{#1}& {#2}\\
+		{#3}& {#4}
+	\end{pmatrix}
+}
+\newcommand{\matt}[9]{					% Pour écrire les matrices 3x3
+	\begin{pmatrix}
+		{#1}& {#2}& {#3}\\
+		{#4}& {#5}& {#6}\\
+		{#7}& {#8}& {#9}
+	\end{pmatrix}
+}
+\newcommand{\detd}[4]{					% Pour écrire les déterminants 2x2
+	\begin{vmatrix}
+		{#1}& {#2}\\
+		{#3}& {#4}
+	\end{vmatrix}
+}
+\newcommand{\dett}[9]{					% Pour écrire les déterminants 3x3
+	\begin{vmatrix}
+		{#1}& {#2}& {#3}\\
+		{#4}& {#5}& {#6}\\
+		{#7}& {#8}& {#9}
+	\end{vmatrix}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Raccourcis pour les limites (commentée à cause d'un message d'erreur dû au \subtrack et aux fontes de maths)
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\Lim}[2]{%
+	\ensuremath{\displaystyle \lim_{x \to {#1}}\,{#2}}
+}
+
+\newcommand{\Limd}[2]{%
+	%	\ensuremath{\displaystyle \lim_{\substack{x \to {#1} \\ > }}\,{#2}}%
+	\Lim{{#1}_{+}}{#2}
+}
+
+\newcommand{\Limg}[2]{%
+	%	\ensuremath{\displaystyle \lim_{\substack{x \to {#1} \\ < }}\,{#2}}%
+	\Lim{{#1}_{-}}{#2} 
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Raccourcis pour les ensembles
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\sset}[1]{%					% pour forcer des accolades un peu plus grandes
+	\Set{\rule[0ex]{0pt}{2ex}#1}%
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Raccourcis pour les fontes mathématiques spéciales (notation des ensembles usuels...)
+% ----------------------------------------------------------------------------------------------------------------
+%\DeclareMathAlphabet\mathbb{U}{fplmbb}{m}{n}	% police avec les doubles barres commen au tableau...
+\newcommand{\R}{\mathbb{R}}				% ensemble des réels
+\newcommand{\Q}{\mathbb{Q}} 			% ensemble des rationnels
+\newcommand{\CC}{\mathbb{C}}			% ensemble des complexes
+\newcommand{\N}{\mathbb{N}}				% ensemble des entiers naturels
+\newcommand{\Z}{\mathbb{Z}}				% ensemble des entiers relatifs
+\newcommand{\A}{\mathbb{A}}				% corps ou algèbre A
+\newcommand{\BB}{\mathbb{B}}			% corps ou algèbre B
+\renewcommand{\P}{\mathbb{P}}			% plan ou ensemble des entiers pairs
+\newcommand{\I}{\mathbb{I}}				% ensemble des entiers impairs
+\newcommand{\D}{\mathbb{D}}				% ensemble des droites
+% --
+% Notation en caractère gras
+% --
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\ba}{\mathbf{a}}
+\newcommand{\bB}{\mathbf{B}}
+\newcommand{\bb}{\mathbf{b}}
+\newcommand{\bc}{\mathbf{c}}
+\newcommand{\br}{\mathbf{r}}
+\newcommand{\bR}{\mathbf{R}}
+\newcommand{\bu}{\mathbf{u}}
+\newcommand{\bt}{\mathbf{t}}
+% --
+% Notation en caractères calligraphiques
+% --
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}} % Faux
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}} % Vrai
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
+% --
+% Divers commandes en caractères romains
+% --
+\newcommand{\Alt}{\mathcal{A}\it lt\ } % groupe alterne
+\newcommand{\fix}{\mathrm{Fix}}
+\newcommand{\card}{\mathrm{Card}}
+\newcommand{\rang}{\mathrm{rang}}
+\newcommand{\dom}{\mathrm{dom}} 
+\newcommand{\vect}{\mathrm{vect}}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\supp}{\mathrm{supp}}
+\newcommand{\ind}{\mathrm{ind}}
+\newcommand{\im}[1]{\mathrm{Im}({#1})}
+\newcommand{\codim}{\mathrm{codim}}
+\newcommand{\sign}{\mathrm{sign}}
+\newcommand{\tr}{\mathrm{tr}\ }
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\GL}{\mathrm{GL}}
+\newcommand{\SL}{\mathrm{SL}}
+\newcommand{\car}{\mathrm{Car}}
+\newcommand{\perm}{\mathrm{Perm}}
+\newcommand{\ppmc}{\mathrm{ppmc}}
+\newcommand{\pgdc}{\mathrm{pgdc}}
+\newcommand{\sgn}{\mathrm{sgn}}
+\newcommand{\proj}{\mathrm{Proj}}
+\newcommand{\recip}[1]{\ensuremath{\prescript{r}{}{#1}}}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Raccourcis pour les réponses optionnelles aux exercices
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand{\rep}[1]{%\ réponse standard en mode math
+	\opt{reponse}{\setlength{\fboxsep}{3pt} \fcolorbox{black}{yellow}{\ensuremath{#1}}}%
+}
+\newcommand{\rept}[1]{% réponse avec du texte (ne supporte pas les listes)
+	\opt{reponse}{\setlength{\fboxsep}{3pt}\fcolorbox{black}{yellow}{{#1}}}%
+}
+\newcommand{\repl}[1]{% réponse avec une liste
+	\opt{reponse}{%
+		\noindent%
+		\setlength{\fboxsep}{3pt}%
+		\fcolorbox{black}{yellow}{%
+			\begin{minipage}{\dimexpr\linewidth-2\fboxsep}%
+				{#1}
+			\end{minipage}
+		}%
+	}
+}
+\newcommand{\repc}[1]{% réponse avec une liste
+	\opt{reponse}{%
+		\noindent%
+		\setlength{\fboxsep}{3pt}%
+		\fcolorbox{black}{yellow}{%
+			\begin{minipage}{\dimexpr\linewidth-2\fboxsep}%
+				\centering
+				{#1}
+			\end{minipage}
+		}%
+	}
+}
+\newcommand{\repn}[1]{% réponse avec \num
+	\opt{reponse}{\setlength{\fboxsep}{3pt}\fcolorbox{black}{yellow}{\num{#1}}}%
+}
+\newcommand{\repSI}[2]{% réponse avec \SI
+	\opt{reponse}{\setlength{\fboxsep}{3pt}\fcolorbox{black}{yellow}{\SI{#1}{#2}}}%
+}
+\newcommand{\repNewline}{% \newline uniquement avec les réponses
+	\opt{reponse}{\newline}
+}
+
+
+
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+% 2.3 INFORMATIQUE
+%
+% A DÉCOMMENTER POUR L'INFORMATIQUE
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+%-----------------------------------------------------------------------------------------------------------------
+% Ecrire des nombres en binaire (un b en indice)
+% ----------------------------------------------------------------------------------------------------------------
+\newcommand\binaire[1]{\ensuremath{{#1}\raisebox{-.5ex}{\footnotesize bin}}}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Pour empêcher polyglossia de franciser les codes informatiques (espaces avant ":" et autres...)
+% ----------------------------------------------------------------------------------------------------------------
+\BeforeBeginEnvironment{minted}{\begin{english}}
+\AfterEndEnvironment{minted}{\end{english}}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Pour du code inline dans divers langages de programmation
+% ----------------------------------------------------------------------------------------------------------------
+\newmintinline{bash}{}
+\newmintinline{latex}{}
+\newmintinline{html}{}
+\newmintinline{css}{}
+\newmintinline{js}{}
+\newmintinline{java}{}
+\newmintinline{php}{}
+\newmintinline{sql}{}
+\newmintinline{python}{}
+
+\newcommand{\incmd}[1]{\begin{english}\bashinline{#1}\end{english}}
+\newcommand{\inlatex}[1]{\begin{english}\mintinline{latex}{#1}\end{english}}
+\newcommand{\inbash}[1]{\begin{english}\bashinline{#1}\end{english}}
+\newcommand{\inhtml}[1]{\begin{english}\htmlinline{#1}\end{english}}
+\newcommand{\incss}[1]{\begin{english}\cssinline{#1}\end{english}}
+\newcommand{\injs}[1]{\begin{english}\jsinline{#1}\end{english}}
+\newcommand{\injava}[1]{\begin{english}\javainline{#1}\end{english}}
+\newcommand{\inphp}[1]{\begin{english}\phpinline{#1}\end{english}}
+\newcommand{\insql}[1]{\begin{english}\sqlinline{#1}\end{english}}
+\newcommand{\inpy}[1]{\begin{english}\pythoninline{#1}\end{english}}
+
+
+
+%-----------------------------------------------------------------------------------------------------------------
+%
+% Definitions des couleurs de LibreOffice
+%
+% ----------------------------------------------------------------------------------------------------------------
+\definecolor{magenta}{rgb}{1,0,1}
+\definecolor{gris}{rgb}{0.7,.7,0.7}
+\definecolor{OOo_vert_clair}{rgb}{0,1,0}
+\definecolor{OOo_vert}{rgb}{0,.5,0}
+\definecolor{OOo_turquoise_clair}{rgb}{0,1,1}
+\definecolor{OOo_rouge_5}{rgb}{.92,.38,.24}
+\definecolor{OOo_jaune}{rgb}{1,1,0}
+\definecolor{OOo_gris_40p}{rgb}{.6,.6,.6}
+\definecolor{grisClair}{rgb}{.9,.9,.9}
+
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+
+
+
+
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+%
+% PARTIE 3 : paragraphes particuliers (déclarés en utilisant amsthm et thmtools)
+%
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+% ----------------------------------------------------------------------------------------------------------------
+% Pour chacun des paragraphes particuliers suivants, il existe une version au singulier et au pluriel, comme dans 
+% \exemple et \exemples, et une version étoilée (sans numérotation), comme dans \exemple et \exemple*
+% Exception : \defin qui n'a pas de version étoilée
+%
+% Les paragraphes particuliers sont les suivants :
+%	- Exemple;
+%	- Contre-exemple;
+%	- Remarque;
+%	- Exercice;
+%	- Exercice* (l'étoile s'affiche dans le document final et signifie exercice plus difficile);
+%	- Problème;
+%	- Problème* (l'étoile s'affiche dans le document final et signifie problème plus difficile);
+%	- Rappel;
+%	- Rappel* (l'étoile s'affiche dans le document final et signifie rappel particulier
+%	- Définition;
+%	- Propriété
+%	- Convention
+%	- Critère
+%	- Résultat
+%	- Principe
+%	- Notion intuitive
+%	- Hypothèse
+%	- Thèse et Conclusion
+%	- Démonstration
+%	- Notation
+%	- Algorithme
+%	- Erreur courante
+%	- Best practice
+%	- Astuce
+%	- Conséquence
+% ----------------------------------------------------------------------------------------------------------------
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Déclaration des styles utilisés par les paragraphes spéciaux
+% ----------------------------------------------------------------------------------------------------------------
+
+% Style de base pour les paragraphes spéciaux de base
+\declaretheoremstyle[spaceabove=\topsep,spacebelow=\topsep,headfont=\normalfont\bfseries,
+	notefont=\bfseries,notebraces={(}{)},headpunct=,bodyfont=\normalfont,postheadspace=\newline
+]{styleBase}
+
+% Style pour les paragraphes liés à l'informatique
+\declaretheoremstyle[spaceabove=\topsep,spacebelow=\topsep,headfont=\normalfont\bfseries,notefont=\bfseries,
+	notebraces={(}{)},headpunct=,bodyfont=\normalfont,postheadspace=\newline,
+	shaded={rulecolor=black,rulewidth=1pt, bgcolor=white}]{styleInfo}
+
+% Style pour les définitions
+\definecolor{grayDef}{gray}{0.9}
+\let\leftbar\relax						% Pour éviter un clash entre thmtools / thmbox et minted / framed
+\let\endleftbar\relax					% Pour éviter un clash entre thmtools / thmbox et minted / framed
+\declaretheoremstyle[thmbox=S,notefont=\bfseries,shaded={bgcolor=grayDef}]{styleDef}
+\declaretheorem[name=Définition,style=styleDef,parent=chapter]{definitionThm}
+\declaretheorem[name=Définitions,style=styleDef,numberlike=definitionThm]{definitionsThm}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \exemple et \exemples
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Exemple,style=styleBase,numberwithin=chapter]{exempleThm}
+\declaretheorem[name=Exemples,style=styleBase,numberlike=exempleThm]{exemplesThm}
+\declaretheorem[name=Exemple,style=styleBase,numbered=no]{exempleThm*}
+\declaretheorem[name=Exemples,style=styleBase,numbered=no]{exemplesThm*}
+\NewDocumentCommand{\exemple}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{exempleThm*}[#2]%
+				{#3}
+			\end{exempleThm*}
+		}{
+			\begin{exempleThm*}
+				{#3}
+			\end{exempleThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{exempleThm}[#2]%
+				{#3}
+			\end{exempleThm}
+		}{
+			\begin{exempleThm}%
+				{#3}
+			\end{exempleThm}
+		}
+	}
+}
+\NewDocumentCommand{\exemples}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{exemplesThm*}[#2]%
+				{#3}
+			\end{exemplesThm*}
+		}{
+			\begin{exemplesThm*}
+				{#3}
+			\end{exemplesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{exemplesThm}[#2]%
+				{#3}
+			\end{exemplesThm}
+		}{
+			\begin{exemplesThm}%
+				{#3}
+			\end{exemplesThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \contreExemple et \contreExemples
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Contre-exemple,style=styleBase,numberwithin=chapter]{contre-exempleThm}
+\declaretheorem[name=Contre-exemples,style=styleBase,numberlike=contre-exempleThm]{contre-exemplesThm}
+\declaretheorem[name=Contre-exemple,style=styleBase,numbered=no]{contre-exempleThm*}
+\declaretheorem[name=Contre-exemples,style=styleBase,numbered=no]{contre-exemplesThm*}
+\NewDocumentCommand{\contreExemple}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{contre-exempleThm*}[#2]%
+				{#3}
+			\end{contre-exempleThm*}
+		}{
+			\begin{contre-exempleThm*}
+				{#3}
+			\end{contre-exempleThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{contre-exempleThm}[#2]%
+				{#3}
+			\end{contre-exempleThm}
+		}{
+			\begin{contre-exempleThm}%
+				{#3}
+			\end{contre-exempleThm}
+		}
+	}
+}
+\NewDocumentCommand{\contreExemples}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{contre-exemplesThm*}[#2]%
+				{#3}
+			\end{contre-exemplesThm*}
+		}{
+			\begin{contre-exemplesThm*}
+				{#3}
+			\end{contre-exemplesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{contre-exemplesThm}[#2]%
+				{#3}
+			\end{contre-exemplesThm}
+		}{
+			\begin{contre-exemplesThm}%
+				{#3}
+			\end{contre-exemplesThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \remarque et \remarques
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Remarque,style=styleBase,numberwithin=chapter]{remarqueThm}
+\declaretheorem[name=Remarques,style=styleBase,numberlike=remarqueThm]{remarquesThm}
+\declaretheorem[name=Remarque,style=styleBase,numbered=no]{remarqueThm*}
+\declaretheorem[name=Remarques,style=styleBase,numbered=no]{remarquesThm*}
+\NewDocumentCommand{\remarque}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{remarqueThm*}[#2]%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\HandRight\hspace*{12pt}}}%
+				{#3}
+			\end{remarqueThm*}
+		}{
+			\begin{remarqueThm*}
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\HandRight\hspace*{12pt}}}%
+				{#3}
+			\end{remarqueThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{remarqueThm}[#2]%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\HandRight\hspace*{12pt}}}%
+				{#3}
+			\end{remarqueThm}
+		}{
+			\begin{remarqueThm}%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\HandRight\hspace*{12pt}}}%
+				{#3}
+			\end{remarqueThm}
+		}
+	}
+}
+\NewDocumentCommand{\remarques}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{remarquesThm*}[#2]%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\HandRight\hspace*{12pt}}}%
+				{#3}
+			\end{remarquesThm*}
+		}{
+			\begin{remarquesThm*}
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\HandRight\hspace*{12pt}}}%
+				{#3}
+			\end{remarquesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{remarquesThm}[#2]%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\HandRight\hspace*{12pt}}}%
+				{#3}
+			\end{remarquesThm}
+		}{
+			\begin{remarquesThm}%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\HandRight\hspace*{12pt}}}%
+				{#3}
+			\end{remarquesThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \exercice, \exercices, \exerciceEtoile et \exercicesEtoile
+% N.B.	en LaTeX * signifie habituellement "sans la numérotation", comme dans \exercice* et \exercices* (ici ce qui
+%		est affiché dans le document final est "Exercice" et "Exercices");
+%		ici Etoile signifie "version plus difficile" comme dans \exerciceEtoile et \exercicesEtoile (ici ce qui est
+%		affiché dans le document final est "Exercice*" et "Exercices*);
+%		il y a donc aussi \exerciceEtoile* et \exercicesEtoile* (plus difficils, sans numérotation)
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Exercice,style=styleBase,numberwithin=chapter]{exerciceThm}
+\declaretheorem[name=Exercices,style=styleBase,numberlike=exerciceThm]{exercicesThm}
+\declaretheorem[name=Exercice,style=styleBase,numbered=no]{exerciceThm*}
+\declaretheorem[name=Exercices,style=styleBase,numbered=no]{exercicesThm*}
+\declaretheorem[name=Exercice*,style=styleBase,numberwithin=chapter]{exerciceThmEtoile}
+\declaretheorem[name=Exercices*,style=styleBase,numberlike=exerciceThm]{exercicesThmEtoile}
+\declaretheorem[name=Exercice*,style=styleBase,numbered=no]{exerciceThmEtoile*}
+\declaretheorem[name=Exercices*,style=styleBase,numbered=no]{exercicesThmEtoile*}
+\NewDocumentCommand{\exercice}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{exerciceThm*}[#2]%
+				{#3}
+			\end{exerciceThm*}
+		}{
+			\begin{exerciceThm*}
+				{#3}
+			\end{exerciceThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{exerciceThm}[#2]%
+				{#3}
+			\end{exerciceThm}
+		}{
+			\begin{exerciceThm}%
+				{#3}
+			\end{exerciceThm}
+		}
+	}
+}
+\NewDocumentCommand{\exercices}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{exercicesThm*}[#2]%
+				{#3}
+			\end{exercicesThm*}
+		}{
+			\begin{exercicesThm*}
+				{#3}
+			\end{exercicesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{exercicesThm}[#2]%
+				{#3}
+			\end{exercicesThm}
+		}{
+			\begin{exercicesThm}%
+				{#3}
+			\end{exercicesThm}
+		}
+	}
+}
+\NewDocumentCommand{\exerciceEtoile}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{exerciceThmEtoile*}[#2]%
+				{#3}
+			\end{exerciceThmEtoile*}
+		}{
+			\begin{exerciceThmEtoile*}
+				{#3}
+			\end{exerciceThmEtoile*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{exerciceThmEtoile}[#2]%
+				{#3}
+			\end{exerciceThmEtoile}
+		}{
+			\begin{exerciceThmEtoile}%
+				{#3}
+			\end{exerciceThmEtoile}
+		}
+	}
+}
+\NewDocumentCommand{\exercicesEtoile}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{exercicesThmEtoile*}[#2]%
+				{#3}
+			\end{exercicesThmEtoile*}
+		}{
+			\begin{exercicesThmEtoile*}
+				{#3}
+			\end{exercicesThmEtoile*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{exercicesThmEtoile}[#2]%
+				{#3}
+			\end{exercicesThmEtoile}
+		}{
+			\begin{exercicesThmEtoile}%
+				{#3}
+			\end{exercicesThmEtoile}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \probleme, \problemes, \problemeEtoile et \problemesEtoile
+% N.B.	en LaTeX * signifie habituellement "sans la numérotation", comme dans \probleme* et \problemes* (ici ce qui
+%		est affiché dans le document final est "Problème" et "Problèmes");
+%		ici Etoile signifie "version plus difficile" comme dans \problemeEtoile et \problemesEtoile (ici ce qui est
+%		affiché dans le document final est "Problème*" et "Problèmes*);
+%		il y a donc aussi \problemeEtoile* et \problemesEtoile* (plus difficils, sans numérotation)
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Problème,style=styleBase,numberwithin=chapter]{problemeThm}
+\declaretheorem[name=Problèmes,style=styleBase,numberlike=problemeThm]{problemesThm}
+\declaretheorem[name=Problème,style=styleBase,numbered=no]{problemeThm*}
+\declaretheorem[name=Problèmes,style=styleBase,numbered=no]{problemesThm*}
+\declaretheorem[name=Problème*,style=styleBase,numberwithin=chapter]{problemeThmEtoile}
+\declaretheorem[name=Problèmes*,style=styleBase,numberlike=problemeThm]{problemesThmEtoile}
+\declaretheorem[name=Problème*,style=styleBase,numbered=no]{problemeThmEtoile*}
+\declaretheorem[name=Problèmes*,style=styleBase,numbered=no]{problemesThmEtoile*}
+\NewDocumentCommand{\probleme}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{problemeThm*}[#2]%
+				{#3}
+			\end{problemeThm*}
+		}{
+			\begin{problemeThm*}
+				{#3}
+			\end{problemeThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{problemeThm}[#2]%
+				{#3}
+			\end{problemeThm}
+		}{
+			\begin{problemeThm}%
+				{#3}
+			\end{problemeThm}
+		}
+	}
+}
+\NewDocumentCommand{\problemes}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{problemesThm*}[#2]%
+				{#3}
+			\end{problemesThm*}
+		}{
+			\begin{problemesThm*}
+				{#3}
+			\end{problemesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{problemesThm}[#2]%
+				{#3}
+			\end{problemesThm}
+		}{
+			\begin{problemesThm}%
+				{#3}
+			\end{problemesThm}
+		}
+	}
+}
+\NewDocumentCommand{\problemeEtoile}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{problemeThmEtoile*}[#2]%
+				{#3}
+			\end{problemeThmEtoile*}
+		}{
+			\begin{problemeThmEtoile*}
+				{#3}
+			\end{problemeThmEtoile*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{problemeThmEtoile}[#2]%
+				{#3}
+			\end{problemeThmEtoile}
+		}{
+			\begin{problemeThmEtoile}%
+				{#3}
+			\end{problemeThmEtoile}
+		}
+	}
+}
+\NewDocumentCommand{\problemesEtoile}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{problemesThmEtoile*}[#2]%
+				{#3}
+			\end{problemesThmEtoile*}
+		}{
+			\begin{problemesThmEtoile*}
+				{#3}
+			\end{problemesThmEtoile*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{problemesThmEtoile}[#2]%
+				{#3}
+			\end{problemesThmEtoile}
+		}{
+			\begin{problemesThmEtoile}%
+				{#3}
+			\end{problemesThmEtoile}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \rappel, \rappels, \rappelEtoile et \rappelsEtoile
+% N.B.	en LaTeX * signifie habituellement "sans la numérotation", comme dans \rappel* et \rappels* (ici ce qui
+%		est affiché dans le document final est "Rappel" et "Rappels");
+%		ici Etoile signifie "version particulière" comme dans \rappelEtoile et \rappelsEtoile (ici ce qui est
+%		affiché dans le document final est "Rappel*" et "Rappels*);
+%		il y a donc aussi \rappelEtoile* et \rappelsEtoile* (plus difficils, sans numérotation)
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Rappel,style=styleBase,numberwithin=chapter]{rappelThm}
+\declaretheorem[name=Rappels,style=styleBase,numberlike=rappelThm]{rappelsThm}
+\declaretheorem[name=Rappel,style=styleBase,numbered=no]{rappelThm*}
+\declaretheorem[name=Rappels,style=styleBase,numbered=no]{rappelsThm*}
+\declaretheorem[name=Rappel*,style=styleBase,numberwithin=chapter]{rappelThmEtoile}
+\declaretheorem[name=Rappels*,style=styleBase,numberlike=rappelThm]{rappelsThmEtoile}
+\declaretheorem[name=Rappel*,style=styleBase,numbered=no]{rappelThmEtoile*}
+\declaretheorem[name=Rappels*,style=styleBase,numbered=no]{rappelsThmEtoile*}
+\NewDocumentCommand{\rappel}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{rappelThm*}[#2]%
+				{#3}
+			\end{rappelThm*}
+		}{
+			\begin{rappelThm*}
+				{#3}
+			\end{rappelThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{rappelThm}[#2]%
+				{#3}
+			\end{rappelThm}
+		}{
+			\begin{rappelThm}%
+				{#3}
+			\end{rappelThm}
+		}
+	}
+}
+\NewDocumentCommand{\rappels}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{rappelsThm*}[#2]%
+				{#3}
+			\end{rappelsThm*}
+		}{
+			\begin{rappelsThm*}
+				{#3}
+			\end{rappelsThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{rappelsThm}[#2]%
+				{#3}
+			\end{rappelsThm}
+		}{
+			\begin{rappelsThm}%
+				{#3}
+			\end{rappelsThm}
+		}
+	}
+}
+\NewDocumentCommand{\rappelEtoile}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{rappelThmEtoile*}[#2]%
+				{#3}
+			\end{rappelThmEtoile*}
+		}{
+			\begin{rappelThmEtoile*}
+				{#3}
+			\end{rappelThmEtoile*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{rappelThmEtoile}[#2]%
+				{#3}
+			\end{rappelThmEtoile}
+		}{
+			\begin{rappelThmEtoile}%
+				{#3}
+			\end{rappelThmEtoile}
+		}
+	}
+}
+\NewDocumentCommand{\rappelsEtoile}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{rappelsThmEtoile*}[#2]%
+				{#3}
+			\end{rappelsThmEtoile*}
+		}{
+			\begin{rappelsThmEtoile*}
+				{#3}
+			\end{rappelsThmEtoile*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{rappelsThmEtoile}[#2]%
+				{#3}
+			\end{rappelsThmEtoile}
+		}{
+			\begin{rappelsThmEtoile}%
+				{#3}
+			\end{rappelsThmEtoile}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \defin et \defins (sans version étoilées)
+% N.B.	il n'est pas possible de faire une définition avec le filet vertical, la couleur de fond mais sans la
+%		numérotation. Il n'y a donc pas de version étoilée de cette commande
+% ----------------------------------------------------------------------------------------------------------------
+\NewDocumentCommand{\defin}{o >{\TrimSpaces}m}{
+	\IfValueTF {#1}{
+		\begin{definitionThm}[#1]%
+			{#2}
+		\end{definitionThm}
+	}{
+		\begin{definitionThm}
+			{#2}
+		\end{definitionThm}
+	}
+}
+\NewDocumentCommand{\defins}{o >{\TrimSpaces}m}{
+	\IfValueTF {#1}{
+		\begin{definitionsThm}[#1]%
+			{#2}
+		\end{definitionsThm}
+	}{
+		\begin{definitionsThm}
+			{#2}
+		\end{definitionsThm}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \propriete et \proprietes
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Propriété,style=styleBase,numberwithin=chapter]{proprieteThm}
+\declaretheorem[name=Propriétés,style=styleBase,numberlike=proprieteThm]{proprietesThm}
+\declaretheorem[name=Propriété,style=styleBase,numbered=no]{proprieteThm*}
+\declaretheorem[name=Propriétés,style=styleBase,numbered=no]{proprietesThm*}
+\NewDocumentCommand{\propriete}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{proprieteThm*}[#2]%
+				{#3}
+			\end{proprieteThm*}
+		}{
+			\begin{proprieteThm*}
+				{#3}
+			\end{proprieteThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{proprieteThm}[#2]%
+				{#3}
+			\end{proprieteThm}
+		}{
+			\begin{proprieteThm}%
+				{#3}
+			\end{proprieteThm}
+		}
+	}
+}
+\NewDocumentCommand{\proprietes}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{proprietesThm*}[#2]%
+				{#3}
+			\end{proprietesThm*}
+		}{
+			\begin{proprietesThm*}
+				{#3}
+			\end{proprietesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{proprietesThm}[#2]%
+				{#3}
+			\end{proprietesThm}
+		}{
+			\begin{proprietesThm}%
+				{#3}
+			\end{proprietesThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \convention et \conventions
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Convention,style=styleBase,numberwithin=chapter]{conventionThm}
+\declaretheorem[name=Conventions,style=styleBase,numberlike=conventionThm]{conventionsThm}
+\declaretheorem[name=Convention,style=styleBase,numbered=no]{conventionThm*}
+\declaretheorem[name=Conventions,style=styleBase,numbered=no]{conventionsThm*}
+\NewDocumentCommand{\convention}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{conventionThm*}[#2]%
+				{#3}
+			\end{conventionThm*}
+		}{
+			\begin{conventionThm*}
+				{#3}
+			\end{conventionThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{conventionThm}[#2]%
+				{#3}
+			\end{conventionThm}
+		}{
+			\begin{conventionThm}%
+				{#3}
+			\end{conventionThm}
+		}
+	}
+}
+\NewDocumentCommand{\conventions}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{conventionsThm*}[#2]%
+				{#3}
+			\end{conventionsThm*}
+		}{
+			\begin{conventionsThm*}
+				{#3}
+			\end{conventionsThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{conventionsThm}[#2]%
+				{#3}
+			\end{conventionsThm}
+		}{
+			\begin{conventionsThm}%
+				{#3}
+			\end{conventionsThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \critere et \criteres
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Critère,style=styleBase,numberwithin=chapter]{critereThm}
+\declaretheorem[name=Critères,style=styleBase,numberlike=critereThm]{criteresThm}
+\declaretheorem[name=Critère,style=styleBase,numbered=no]{critereThm*}
+\declaretheorem[name=Critères,style=styleBase,numbered=no]{criteresThm*}
+\NewDocumentCommand{\critere}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{critereThm*}[#2]%
+				{#3}
+			\end{critereThm*}
+		}{
+			\begin{critereThm*}
+				{#3}
+			\end{critereThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{critereThm}[#2]%
+				{#3}
+			\end{critereThm}
+		}{
+			\begin{critereThm}%
+				{#3}
+			\end{critereThm}
+		}
+	}
+}
+\NewDocumentCommand{\criteres}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{criteresThm*}[#2]%
+				{#3}
+			\end{criteresThm*}
+		}{
+			\begin{criteresThm*}
+				{#3}
+			\end{criteresThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{criteresThm}[#2]%
+				{#3}
+			\end{criteresThm}
+		}
+		{
+			\begin{criteresThm}%
+				{#3}
+			\end{criteresThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \resultat et \resultats
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Résultat,style=styleBase,numberwithin=chapter]{resultatThm}
+\declaretheorem[name=Résultats,style=styleBase,numberlike=resultatThm]{resultatsThm}
+\declaretheorem[name=Résultat,style=styleBase,numbered=no]{resultatThm*}
+\declaretheorem[name=Résultats,style=styleBase,numbered=no]{resultatsThm*}
+\NewDocumentCommand{\resultat}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{resultatThm*}[#2]%
+				{#3}
+			\end{resultatThm*}
+		}{
+			\begin{resultatThm*}
+				{#3}
+			\end{resultatThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{resultatThm}[#2]%
+				{#3}
+			\end{resultatThm}
+		}{
+			\begin{resultatThm}%
+				{#3}
+			\end{resultatThm}
+		}
+	}
+}
+\NewDocumentCommand{\resultats}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{resultatsThm*}[#2]%
+				{#3}
+			\end{resultatsThm*}
+		}{
+			\begin{resultatsThm*}
+				{#3}
+			\end{resultatsThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{resultatsThm}[#2]%
+				{#3}
+			\end{resultatsThm}
+		}{
+			\begin{resultatsThm}%
+				{#3}
+			\end{resultatsThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \principe et \principes
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Principe,style=styleBase,numberwithin=chapter]{principeThm}
+\declaretheorem[name=Principes,style=styleBase,numberlike=principeThm]{principesThm}
+\declaretheorem[name=Principe,style=styleBase,numbered=no]{principeThm*}
+\declaretheorem[name=Principes,style=styleBase,numbered=no]{principesThm*}
+\NewDocumentCommand{\principe}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{principeThm*}[#2]%
+				{#3}
+			\end{principeThm*}
+		}{
+			\begin{principeThm*}
+				{#3}
+			\end{principeThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{principeThm}[#2]%
+				{#3}
+			\end{principeThm}
+		}{
+			\begin{principeThm}%
+				{#3}
+			\end{principeThm}
+		}
+	}
+}
+\NewDocumentCommand{\principes}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{principesThm*}[#2]%
+				{#3}
+			\end{principesThm*}
+		}{
+			\begin{principesThm*}
+				{#3}
+			\end{principesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{principesThm}[#2]%
+				{#3}
+			\end{principesThm}
+		}{
+			\begin{principesThm}%
+				{#3}
+			\end{principesThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% Déclaration des styles utilisés par les paragraphes spéciaux en maths
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheoremstyle[spaceabove=\topsep,spacebelow=\topsep,headfont=\normalfont\bfseries,
+	notefont=\bfseries,notebraces={(}{)},headpunct=,bodyfont=\normalfont,postheadspace=\newline
+]{styleMaths}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \notionIntuitive
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Notion intuitive,style=styleMaths,numberwithin=chapter]{notionIntuitiveThm}
+\declaretheorem[name=Notions intuitives,style=styleMaths,numberlike=notionIntuitiveThm]{notionsIntuitivesThm}
+\declaretheorem[name=Notion intuitive,style=styleMaths,numbered=no]{notionIntuitiveThm*}
+\declaretheorem[name=Notions intuitives,style=styleMaths,numbered=no]{notionsIntuitivesThm*}
+\NewDocumentCommand{\notionIntuitive}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{notionIntuitiveThm*}[#2]%
+				\raisebox{.5\height}[0cm][0cm]{\makebox[0cm][r]{\includegraphics[width=1em]{styles/images/ampoule}\hspace*{12pt}}}%
+				{#3}
+			\end{notionIntuitiveThm*}
+		}{
+			\begin{notionIntuitiveThm*}
+				\raisebox{.5\height}[0cm][0cm]{\makebox[0cm][r]{\includegraphics[width=1em]{styles/images/ampoule}\hspace*{12pt}}}%
+				{#3}
+			\end{notionIntuitiveThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{notionIntuitiveThm}[#2]%
+				\raisebox{.5\height}[0cm][0cm]{\makebox[0cm][r]{\includegraphics[width=1em]{styles/images/ampoule}\hspace*{12pt}}}%
+				{#3}
+			\end{notionIntuitiveThm}
+		}{
+			\begin{notionIntuitiveThm}%
+				\raisebox{.5\height}[0cm][0cm]{\makebox[0cm][r]{\includegraphics[width=1em]{styles/images/ampoule}\hspace*{12pt}}}%
+				{#3}
+			\end{notionIntuitiveThm}
+		}
+	}
+}
+\NewDocumentCommand{\notionsIntuitives}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{notionsIntuitivesThm*}[#2]%
+				\raisebox{.5\height}[0cm][0cm]{\makebox[0cm][r]{\includegraphics[width=1em]{images/ampoule}\hspace*{12pt}}}%
+				{#3}
+			\end{notionsIntuitivesThm*}
+		}{
+			\begin{notionsIntuitivesThm*}
+				\raisebox{.5\height}[0cm][0cm]{\makebox[0cm][r]{\includegraphics[width=1em]{images/ampoule}\hspace*{12pt}}}%
+				{#3}
+			\end{notionsIntuitivesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{notionsIntuitivesThm}[#2]%
+				\raisebox{.5\height}[0cm][0cm]{\makebox[0cm][r]{\includegraphics[width=1em]{images/ampoule}\hspace*{12pt}}}%
+				{#3}
+			\end{notionsIntuitivesThm}
+		}{
+			\begin{notionsIntuitivesThm}%
+				\raisebox{.5\height}[0cm][0cm]{\makebox[0cm][r]{\includegraphics[width=1em]{images/ampoule}\hspace*{12pt}}}%
+				{#3}
+			\end{notionsIntuitivesThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \hypothese
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Hypothèse,style=styleMaths,numberwithin=chapter]{hypotheseThm}
+\declaretheorem[name=Hypothèses,style=styleMaths,numberlike=hypotheseThm]{hypothesesThm}
+\declaretheorem[name=Hypothèse,style=styleMaths,numbered=no]{hypotheseThm*}
+\declaretheorem[name=Hypothèses,style=styleMaths,numbered=no]{hypothesesThm*}
+\NewDocumentCommand{\hypothese}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{hypotheseThm*}[#2]%
+				{#3}
+			\end{hypotheseThm*}
+		}{
+			\begin{hypotheseThm*}
+				{#3}
+			\end{hypotheseThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{hypotheseThm}[#2]%
+				{#3}
+			\end{hypotheseThm}
+		}{
+			\begin{hypotheseThm}%
+				{#3}
+			\end{hypotheseThm}
+		}
+	}
+}
+\NewDocumentCommand{\hypotheses}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{hypothesesThm*}[#2]%
+				{#3}
+			\end{hypothesesThm*}
+		}{
+			\begin{hypothesesThm*}
+				{#3}
+			\end{hypothesesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{hypothesesThm}[#2]%
+				{#3}
+			\end{hypothesesThm}
+		}{
+			\begin{hypothesesThm}%
+				{#3}
+			\end{hypothesesThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \these
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Thèse,style=styleMaths,numberwithin=chapter]{theseThm}
+\declaretheorem[name=Thèses,style=styleMaths,numberlike=theseThm]{thesesThm}
+\declaretheorem[name=Thèse,style=styleMaths,numbered=no]{theseThm*}
+\declaretheorem[name=Thèses,style=styleMaths,numbered=no]{thesesThm*}
+\NewDocumentCommand{\these}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{theseThm*}[#2]%
+				{#3}
+			\end{theseThm*}
+		}{
+			\begin{theseThm*}
+				{#3}
+			\end{theseThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{theseThm}[#2]%
+				{#3}
+			\end{theseThm}
+		}{
+			\begin{theseThm}%
+				{#3}
+			\end{theseThm}
+		}
+	}
+}
+\NewDocumentCommand{\theses}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{thesesThm*}[#2]%
+				{#3}
+			\end{thesesThm*}
+		}{
+			\begin{thesesThm*}
+				{#3}
+			\end{thesesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{thesesThm}[#2]%
+				{#3}
+			\end{thesesThm}
+		}{
+			\begin{thesesThm}%
+				{#3}
+			\end{thesesThm}
+		}
+	}
+}
+
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \conclusion
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Conclusion,style=styleMaths,numberwithin=chapter]{conclusionThm}
+\declaretheorem[name=Conclusions,style=styleMaths,numberlike=theseThm]{conclusionsThm}
+\declaretheorem[name=Conclusion,style=styleMaths,numbered=no]{conclusionThm*}
+\declaretheorem[name=Conclusions,style=styleMaths,numbered=no]{conclusionsThm*}
+\NewDocumentCommand{\conclusion}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{conclusionThm*}[#2]%
+				{#3}
+			\end{conclusionThm*}
+		}{
+			\begin{conclusionThm*}
+				{#3}
+			\end{conclusionThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{conclusionThm}[#2]%
+				{#3}
+			\end{conclusionThm}
+		}{
+			\begin{conclusionThm}%
+				{#3}
+			\end{conclusionThm}
+		}
+	}
+}
+\NewDocumentCommand{\conclusions}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{conclusionsThm*}[#2]%
+				{#3}
+			\end{conclusionsThm*}
+		}{
+			\begin{conclusionsThm*}
+				{#3}
+			\end{conclusionsThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{conclusionsThm}[#2]%
+				{#3}
+			\end{conclusionsThm}
+		}{
+			\begin{conclusionsThm}%
+				{#3}
+			\end{conclusionsThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \demonstration
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Démonstration,style=styleMaths,numberwithin=chapter,qed=\qedsymbol]{demonstrationThm}
+\declaretheorem[name=Démonstrations,style=styleMaths,numberlike=demonstrationThm,qed=\qedsymbol]{demonstrationsThm}
+\declaretheorem[name=Démonstration,style=styleMaths,numbered=no,qed=\qedsymbol]{demonstrationThm*}
+\declaretheorem[name=Démonstrations,style=styleMaths,numbered=no,qed=\qedsymbol]{demonstrationsThm*}
+\NewDocumentCommand{\demonstration}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{demonstrationThm*}[#2]%
+				{#3}
+			\end{demonstrationThm*}
+		}{
+			\begin{demonstrationThm*}
+				{#3}
+			\end{demonstrationThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{demonstrationThm}[#2]%
+				{#3}
+			\end{demonstrationThm}
+		}{
+			\begin{demonstrationThm}%
+				{#3}
+			\end{demonstrationThm}
+		}
+	}
+}
+\NewDocumentCommand{\demonstrations}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{demonstrationsThm*}[#2]%
+				{#3}
+			\end{demonstrationsThm*}
+		}{
+			\begin{demonstrationsThm*}
+				{#3}
+			\end{demonstrationsThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{demonstrationsThm}[#2]%
+				{#3}
+			\end{demonstrationsThm}
+		}{
+			\begin{demonstrationsThm}%
+				{#3}
+			\end{demonstrationsThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \notation
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Notation,style=styleMaths,numberwithin=chapter]{notationThm}
+\declaretheorem[name=Notations,style=styleMaths,numberlike=notationThm]{notationsThm}
+\declaretheorem[name=Notation,style=styleMaths,numbered=no]{notationThm*}
+\declaretheorem[name=Notations,style=styleMaths,numbered=no]{notationsThm*}
+\newcommand{\smallpencil}{{\fontencoding{U}\fontfamily{ark}\selectfont\symbol{'120}}}
+\NewDocumentCommand{\notation}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{notationThm*}[#2]%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\smallpencil\hspace*{12pt}}}%
+				{#3}
+			\end{notationThm*}
+		}{
+			\begin{notationThm*}
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\smallpencil\hspace*{12pt}}}%
+				{#3}
+			\end{notationThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{notationThm}[#2]%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\smallpencil\hspace*{12pt}}}%
+				{#3}
+			\end{notationThm}
+		}{
+			\begin{notationThm}%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\smallpencil\hspace*{12pt}}}%
+				{#3}
+			\end{notationThm}
+		}
+	}
+}
+\NewDocumentCommand{\notations}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{notationsThm*}[#2]%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\smallpencil\hspace*{12pt}}}%
+				{#3}
+			\end{notationsThm*}
+		}{
+			\begin{notationsThm*}
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\smallpencil\hspace*{12pt}}}%
+				{#3}
+			\end{notationsThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{notationsThm}[#2]%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\smallpencil\hspace*{12pt}}}%
+				{#3}
+			\end{notationsThm}
+		}{
+			\begin{notationsThm}%
+				\raisebox{\height}[0cm][0cm]{\makebox[0cm][r]{\smallpencil\hspace*{12pt}}}%
+				{#3}
+			\end{notationsThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \hypothese
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Algorithme,style=styleMaths,numberwithin=chapter]{algorithmeThm}
+\declaretheorem[name=Algorithmes,style=styleMaths,numberlike=algorithmeThm]{algorithmesThm}
+\declaretheorem[name=Algorithme,style=styleMaths,numbered=no]{algorithmeThm*}
+\declaretheorem[name=Algorithmes,style=styleMaths,numbered=no]{algorithmesThm*}
+\NewDocumentCommand{\algorithme}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{algorithmeThm*}[#2]%
+				{#3}
+			\end{algorithmeThm*}
+		}{
+			\begin{algorithmeThm*}
+				{#3}
+			\end{algorithmeThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{algorithmeThm}[#2]%
+				{#3}
+			\end{algorithmeThm}
+		}{
+			\begin{algorithmeThm}%
+				{#3}
+			\end{algorithmeThm}
+		}
+	}
+}
+\NewDocumentCommand{\algorithmes}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{algorithmesThm*}[#2]%
+				{#3}
+			\end{algorithmesThm*}
+		}{
+			\begin{algorithmesThm*}
+				{#3}
+			\end{algorithmesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{algorithmesThm}[#2]%
+				{#3}
+			\end{algorithmesThm}
+		}{
+			\begin{algorithmesThm}%
+				{#3}
+			\end{algorithmesThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \erreurCourante et \erreursCourantes
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Erreur courante,style=styleInfo,numberwithin=chapter]{erreurCouranteThm}
+\declaretheorem[name=Erreurs courantes,style=styleInfo,numberlike=erreurCouranteThm]{erreursCourantesThm}
+\declaretheorem[name=Erreur courante,style=styleInfo,numbered=no]{erreurCouranteThm*}
+\declaretheorem[name=Erreurs courantes,style=styleInfo,numbered=no]{erreursCourantesThm*}
+\NewDocumentCommand{\erreurCourante}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{erreurCouranteThm*}[#2]%
+				{#3}
+			\end{erreurCouranteThm*}
+		}{
+			\begin{erreurCouranteThm*}
+				{#3}
+			\end{erreurCouranteThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{erreurCouranteThm}[#2]%
+				{#3}
+			\end{erreurCouranteThm}
+		}{
+			\begin{erreurCouranteThm}%
+				{#3}
+			\end{erreurCouranteThm}
+		}
+	}
+}
+\NewDocumentCommand{\erreursCourantes}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{erreursCourantesThm*}[#2]%
+				{#3}
+			\end{erreursCourantesThm*}
+		}{
+			\begin{erreursCourantesThm*}
+				{#3}
+			\end{erreursCourantesThm*}
+		}
+	}{
+	\IfValueTF {#2}{
+			\begin{erreursCourantesThm}[#2]%
+				{#3}
+			\end{erreursCourantesThm}
+		}{
+			\begin{erreursCourantesThm}%
+				{#3}
+			\end{erreursCourantesThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \bestPractice et \bestPractices
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Best Practice,style=styleInfo,numberwithin=chapter]{bestPracticeThm}
+\declaretheorem[name=Best Practices,style=styleInfo,numberlike=bestPracticeThm]{bestPracticesThm}
+\declaretheorem[name=Best Practice,style=styleInfo,numbered=no]{bestPracticeThm*}
+\declaretheorem[name=Best Practices,style=styleInfo,numbered=no]{bestPracticesThm*}
+\NewDocumentCommand{\bestPractice}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{bestPracticeThm*}[#2]%
+				{#3}
+			\end{bestPracticeThm*}
+		}{
+			\begin{bestPracticeThm*}
+				{#3}
+			\end{bestPracticeThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{bestPracticeThm}[#2]%
+				{#3}
+			\end{bestPracticeThm}
+		}{
+			\begin{bestPracticeThm}%
+				{#3}
+			\end{bestPracticeThm}
+		}
+	}
+}
+\NewDocumentCommand{\bestPractices}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{bestPracticesThm*}[#2]%
+				{#3}
+			\end{bestPracticesThm*}
+		}{
+			\begin{bestPracticesThm*}
+				{#3}
+			\end{bestPracticesThm*}
+		}
+	}{
+	\IfValueTF {#2}{
+			\begin{bestPracticesThm}[#2]%
+				{#3}
+			\end{bestPracticesThm}
+		}{
+			\begin{bestPracticesThm}%
+				{#3}
+			\end{bestPracticesThm}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \astuce et \astuces
+% ----------------------------------------------------------------------------------------------------------------
+\tikzstyle{styleTitreAstuce} = [draw=black, rounded corners, fill=white, thick, text= black]
+\tikzstyle{styleBoiteAstuce} = [draw=black, fill=white, very thick, rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+
+\newcommand{\astuceTitre}{Astuce}
+\newsavebox{\astuceBoiteCmd}
+\newcounter{astuceCount}
+
+\NewDocumentEnvironment{astuceBoite1}{o}{%
+	\refstepcounter{astuceCount}
+	\IfValueTF {#1}{
+		\renewcommand{\astuceTitre}{\textbf{Astuce \theastuceCount \ :#1}}
+	}{
+	\renewcommand{\astuceTitre}{\textbf{Astuce \theastuceCount}}
+}
+\begin{lrbox}{\astuceBoiteCmd}%
+	\begin{minipage}[!h]{\linewidth-1cm}
+	}%
+	{%
+	\end{minipage}
+\end{lrbox}
+\begin{center}
+	\begin{tikzpicture}
+	\node[styleBoiteAstuce] (box){\usebox{\astuceBoiteCmd}};
+	\node[styleTitreAstuce, right=10pt] at (box.north west) {\astuceTitre};
+	\end{tikzpicture}
+\end{center}
+}
+\NewDocumentEnvironment{astuceBoite2}{o}{%
+	\IfValueTF {#1}{
+		\renewcommand{\astuceTitre}{\textbf{Astuce~:~#1}}
+	}{
+	\renewcommand{\astuceTitre}{\textbf{Astuce :}}
+}
+\begin{lrbox}{\astuceBoiteCmd}%
+	\begin{minipage}[!h]{\linewidth-1cm}
+	}%
+	{%
+	\end{minipage}
+\end{lrbox}
+\begin{center}
+	\begin{tikzpicture}
+	\node[styleBoiteAstuce] (box){\usebox{\astuceBoiteCmd}};
+	\node[styleTitreAstuce, right=10pt] at (box.north west) {\astuceTitre};
+	\end{tikzpicture}
+\end{center}
+}
+\NewDocumentEnvironment{astuceBoite3}{o}{%
+	\refstepcounter{astuceCount}
+	\IfValueTF {#1}{
+		\renewcommand{\astuceTitre}{\textbf{Astuces \theastuceCount~:~#1}}
+	}{
+	\renewcommand{\astuceTitre}{\textbf{Astuces \theastuceCount}}
+}
+\begin{lrbox}{\astuceBoiteCmd}%
+	\begin{minipage}[!h]{\linewidth-1cm}
+	}%
+	{%
+	\end{minipage}
+\end{lrbox}
+\begin{center}
+	\begin{tikzpicture}
+	\node[styleBoiteAstuce] (box){\usebox{\astuceBoiteCmd}};
+	\node[styleTitreAstuce, right=10pt] at (box.north west) {\astuceTitre};
+	\end{tikzpicture}
+\end{center}
+}
+\NewDocumentEnvironment{astuceBoite4}{o}{%
+	\IfValueTF {#1}{
+		\renewcommand{\astuceTitre}{\textbf{Astuces~:~#1}}
+	}{
+	\renewcommand{\astuceTitre}{\textbf{Astuces~:}}
+}
+\begin{lrbox}{\astuceBoiteCmd}%
+	\begin{minipage}[!h]{\linewidth-1cm}
+	}%
+	{%
+	\end{minipage}
+\end{lrbox}
+\begin{center}
+	\begin{tikzpicture}
+	\node[styleBoiteAstuce] (box){\usebox{\astuceBoiteCmd}};
+	\node[styleTitreAstuce, right=10pt] at (box.north west) {\astuceTitre};
+	\end{tikzpicture}
+\end{center}
+}
+
+
+\NewDocumentCommand{\astuce}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{astuceBoite2}[#2]
+				{#3}
+			\end{astuceBoite2}
+		}{
+			\begin{astuceBoite2}
+				{#3}
+			\end{astuceBoite2}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{astuceBoite1}[#2]
+				{#3}
+			\end{astuceBoite1}
+		}{
+			\begin{astuceBoite1}
+				{#3}
+			\end{astuceBoite1}
+		}
+	}
+}
+\NewDocumentCommand{\astuces}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{astuceBoite4}[#2]
+				{#3}
+			\end{astuceBoite4}
+		}{
+			\begin{astuceBoite4}
+				{#3}
+			\end{astuceBoite4}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{astuceBoite3}[#2]
+				{#3}
+			\end{astuceBoite3}
+		}{
+			\begin{astuceBoite3}
+				{#3}
+			\end{astuceBoite3}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \consequence et \consequences
+% ----------------------------------------------------------------------------------------------------------------
+\declaretheorem[name=Conséquence,style=styleBase,numberwithin=chapter]{consequenceThm}
+\declaretheorem[name=Conséquences,style=styleBase,numberlike=consequenceThm]{consequencesThm}
+\declaretheorem[name=Conséquence,style=styleBase,numbered=no]{consequenceThm*}
+\declaretheorem[name=Conséquences,style=styleBase,numbered=no]{consequencesThm*}
+\NewDocumentCommand{\consequence}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{consequenceThm*}[#2]%
+				{#3}
+			\end{consequenceThm*}
+		}{
+			\begin{consequenceThm*}
+				{#3}
+			\end{consequenceThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{consequenceThm}[#2]%
+				{#3}
+			\end{consequenceThm}
+		}{
+			\begin{consequenceThm}%
+				{#3}
+			\end{consequenceThm}
+		}
+	}
+}
+\NewDocumentCommand{\consequences}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{consequencesThm*}[#2]%
+				{#3}
+			\end{consequencesThm*}
+		}{
+			\begin{consequencesThm*}
+				{#3}
+			\end{consequencesThm*}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{consequencesThm}[#2]%
+				{#3}
+			\end{consequencesThm}
+		}{
+			\begin{consequencesThm}%
+				{#3}
+			\end{consequencesThm}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+%
+% PARTIE 4 : paragraphes particuliers (déclarés en utilisant des boîtes dessinées en PGF/TikZ)
+%
+% xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+% ----------------------------------------------------------------------------------------------------------------
+% Pour chacun des paragraphes particuliers suivants, il existe une version étoilée (sans numérotation), comme 
+% dans \these et \these*
+% Pour \regle, il y a aussi une version au pluriel : \regles
+%
+% Les paragraphes particuliers sont les suivants :
+%	- Axiome
+%	- Théorème
+%	- Corollaire
+%	- Principe d'équivalence
+%	- Règle
+% ----------------------------------------------------------------------------------------------------------------
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \axiome
+% ----------------------------------------------------------------------------------------------------------------
+\tikzstyle{styleTitreAxiome} = [draw=orange, rounded corners, fill=white, text= black]
+\tikzstyle{styleBoiteAxiome} = [draw=orange, fill=blue!5, very thick, rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+
+\newcommand{\axioTitre}{Axiome}
+\newsavebox{\axioBoiteCmd}
+\newcounter{axioCount}
+
+\NewDocumentEnvironment{axioBoite1}{o}{%
+	\refstepcounter{axioCount}
+	\IfValueTF {#1}{
+		\renewcommand{\axioTitre}{\textbf{Axiome \theaxioCount \ (#1)}}
+	}{
+		\renewcommand{\axioTitre}{\textbf{Axiome \theaxioCount}}
+	}
+	\begin{lrbox}{\axioBoiteCmd}%
+		\begin{minipage}[!h]{\linewidth-1cm}
+		}%
+		{%
+		\end{minipage}
+	\end{lrbox}
+	\begin{center}
+		\begin{tikzpicture}
+		\node[styleBoiteAxiome] (box){\usebox{\axioBoiteCmd}};
+		\node[styleTitreAxiome] at (box.north) {\axioTitre};
+		\end{tikzpicture}
+	\end{center}
+}
+\NewDocumentEnvironment{axioBoite2}{o}{%
+	\IfValueTF {#1}{
+		\renewcommand{\axioTitre}{\textbf{Axiome (#1)}}
+	}{
+		\renewcommand{\axioTitre}{\textbf{Axiome}}
+	}
+	\begin{lrbox}{\axioBoiteCmd}%
+		\begin{minipage}[!h]{\linewidth-1cm}
+		}%
+		{%
+		\end{minipage}
+	\end{lrbox}
+	\begin{center}
+		\begin{tikzpicture}
+		\node[styleBoiteAxiome] (box){\usebox{\axioBoiteCmd}};
+		\node[styleTitreAxiome] at (box.north) {\axioTitre};
+		\end{tikzpicture}
+	\end{center}
+}
+
+\NewDocumentCommand{\axiome}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{axioBoite2}[#2]
+				{#3}
+			\end{axioBoite2}
+		}{
+			\begin{axioBoite2}
+				{#3}
+			\end{axioBoite2}
+		}		
+	}{
+		\IfValueTF {#2}{
+			\begin{axioBoite1}[#2]
+				{#3}
+			\end{axioBoite1}
+		}{
+			\begin{axioBoite1}
+				{#3}
+			\end{axioBoite1}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \theoreme
+% ----------------------------------------------------------------------------------------------------------------
+\tikzstyle{styleTitreThm} = [draw=orange, rounded corners, fill=white, text= black]
+\tikzstyle{styleBoiteThm} = [draw=orange, fill=blue!5, very thick, rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+
+\newcommand{\thmTitre}{Théorème}
+\newsavebox{\thmBoiteCmd}
+\newcounter{thmCount}
+
+\NewDocumentEnvironment{thmBoite1}{o}{%
+	\refstepcounter{thmCount}
+	\IfValueTF {#1}{
+		\renewcommand{\thmTitre}{\textbf{Théorème \thethmCount \ (#1)}}
+	}{
+		\renewcommand{\thmTitre}{\textbf{Théorème \thethmCount}}
+	}
+	\begin{lrbox}{\thmBoiteCmd}%
+		\begin{minipage}[!h]{\linewidth-1cm}
+		}%
+		{%
+		\end{minipage}
+	\end{lrbox}
+	\begin{center}
+		\begin{tikzpicture}
+		\node[styleBoiteThm] (box){\usebox{\thmBoiteCmd}};
+		\node[styleTitreThm, right=10pt] at (box.north west) {\thmTitre};
+		\end{tikzpicture}
+	\end{center}
+}
+\NewDocumentEnvironment{thmBoite2}{o}{%
+	\IfValueTF {#1}{
+		\renewcommand{\thmTitre}{\textbf{Théorème (#1)}}
+	}{
+	\renewcommand{\thmTitre}{\textbf{Théorème}}
+}
+\begin{lrbox}{\thmBoiteCmd}%
+	\begin{minipage}[!h]{\linewidth-1cm}
+	}%
+	{%
+	\end{minipage}
+\end{lrbox}
+\begin{center}
+	\begin{tikzpicture}
+	\node[styleBoiteThm] (box){\usebox{\thmBoiteCmd}};
+	\node[styleTitreThm, right=10pt] at (box.north west) {\thmTitre};
+	\end{tikzpicture}
+\end{center}
+}
+
+\NewDocumentCommand{\theoreme}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{thmBoite2}[#2]
+				{#3}
+			\end{thmBoite2}
+		}{
+			\begin{thmBoite2}
+				{#3}
+			\end{thmBoite2}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{thmBoite1}[#2]
+				{#3}
+			\end{thmBoite1}
+		}{
+			\begin{thmBoite1}
+				{#3}
+			\end{thmBoite1}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \corollaire
+% ----------------------------------------------------------------------------------------------------------------
+\tikzstyle{styleTitreThm} = [draw=orange, rounded corners, fill=white, text= black]
+\tikzstyle{styleBoiteThm} = [draw=orange, fill=blue!5, very thick, rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+
+\newcommand{\corTitre}{Corollaire}
+\newsavebox{\corBoiteCmd}
+\newcounter{corCount}
+
+\NewDocumentEnvironment{corBoite1}{o}{%
+	\refstepcounter{corCount}
+	\IfValueTF {#1}{
+		\renewcommand{\corTitre}{\textbf{Corollaire \thecorCount \ (#1)}}
+	}{
+		\renewcommand{\corTitre}{\textbf{Corollaire \thecorCount}}
+	}
+	\begin{lrbox}{\corBoiteCmd}%
+		\begin{minipage}[!h]{\linewidth-1cm}
+		}%
+		{%
+		\end{minipage}
+	\end{lrbox}
+	\begin{center}
+		\begin{tikzpicture}
+		\node[styleBoiteThm] (box){\usebox{\corBoiteCmd}};
+		\node[styleTitreThm, right=10pt] at (box.north west) {\corTitre};
+		\end{tikzpicture}
+	\end{center}
+}
+\NewDocumentEnvironment{corBoite2}{o}{%
+	\IfValueTF {#1}{
+		\renewcommand{\corTitre}{\textbf{Corollaire (#1)}}
+	}{
+		\renewcommand{\corTitre}{\textbf{Corollaire}}
+	}
+	\begin{lrbox}{\corBoiteCmd}%
+		\begin{minipage}[!h]{\linewidth-1cm}
+		}%
+		{%
+		\end{minipage}
+	\end{lrbox}
+	\begin{center}
+		\begin{tikzpicture}
+		\node[styleBoiteThm] (box){\usebox{\corBoiteCmd}};
+		\node[styleTitreThm, right=10pt] at (box.north west) {\corTitre};
+		\end{tikzpicture}
+	\end{center}
+}
+
+\NewDocumentCommand{\corollaire}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{corBoite2}[#2]
+				{#3}
+			\end{corBoite2}
+		}{
+		\begin{corBoite2}
+			{#3}
+		\end{corBoite2}
+		}
+	}{
+		\IfValueTF {#2}{
+			\begin{corBoite1}[#2]
+				{#3}
+			\end{corBoite1}
+		}{
+			\begin{corBoite1}
+				{#3}
+			\end{corBoite1}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \equivalence
+% ----------------------------------------------------------------------------------------------------------------
+\tikzstyle{styleTitreEquiv} = [draw=orange, rounded corners, fill=white, text= black]
+\tikzstyle{styleBoiteEquiv} = [draw=orange, fill=blue!5, very thick, rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+
+\newcommand{\equivTitre}{Principe d'équivalence}
+\newsavebox{\equivBoiteCmd}
+\newcounter{equivCount}
+
+\NewDocumentEnvironment{equivBoite1}{o}{%
+	\refstepcounter{equivCount}
+	\IfValueTF {#1}{
+		\renewcommand{\equivTitre}{\textbf{Principe d'équivalence \theequivCount \ (#1)}}
+	}{
+		\renewcommand{\equivTitre}{\textbf{Principe d'équivalence \theequivCount}}
+	}
+	\begin{lrbox}{\equivBoiteCmd}%
+		\begin{minipage}[!h]{\linewidth-1cm}
+		}%
+		{%
+		\end{minipage}
+	\end{lrbox}
+	\begin{center}
+		\begin{tikzpicture}
+		\node[styleBoiteEquiv] (box){\usebox{\equivBoiteCmd}};
+		\node[styleTitreEquiv] at (box.north) {\equivTitre};
+		\end{tikzpicture}
+	\end{center}
+}
+\NewDocumentEnvironment{equivBoite2}{o}{%
+	\IfValueTF {#1}{
+		\renewcommand{\equivTitre}{\textbf{Principe d'équivalence (#1)}}
+	}{
+		\renewcommand{\equivTitre}{\textbf{Principe d'équivalence}}
+	}
+	\begin{lrbox}{\equivBoiteCmd}%
+		\begin{minipage}[!h]{\linewidth-1cm}
+		}%
+		{%
+		\end{minipage}
+	\end{lrbox}
+	\begin{center}
+		\begin{tikzpicture}
+		\node[styleBoiteEquiv] (box){\usebox{\equivBoiteCmd}};
+		\node[styleTitreEquiv] at (box.north) {\equivTitre};
+		\end{tikzpicture}
+	\end{center}
+}
+
+\NewDocumentCommand{\equivalence}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{equivBoite2}[#2]
+				{#3}
+			\end{equivBoite2}
+		}{
+			\begin{equivBoite2}
+				{#3}
+			\end{equivBoite2}
+		}		
+	}{
+		\IfValueTF {#2}{
+			\begin{equivBoite1}[#2]
+				{#3}
+			\end{equivBoite1}
+		}{
+			\begin{equivBoite1}
+				{#3}
+			\end{equivBoite1}
+		}
+	}
+}
+
+
+
+% ----------------------------------------------------------------------------------------------------------------
+% \regle et \regles
+% ----------------------------------------------------------------------------------------------------------------
+\tikzstyle{styleTitreRegle} = [draw=orange, rounded corners, fill=white, text= black]
+\tikzstyle{styleBoiteRegle} = [draw=orange, fill=blue!5, very thick, rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+
+\newcommand{\regleTitre}{Règle}
+\newsavebox{\regleBoiteCmd}
+\newcounter{regleCount}
+
+\NewDocumentEnvironment{regleBoite1}{o}{%
+	\refstepcounter{regleCount}
+	\IfValueTF {#1}{
+		\renewcommand{\regleTitre}{\textbf{Règle \theregleCount \ (#1)}}
+	}{
+		\renewcommand{\regleTitre}{\textbf{Règle \theregleCount}}
+	}
+	\begin{lrbox}{\regleBoiteCmd}%
+		\begin{minipage}[!h]{\linewidth-1cm}
+		}%
+		{%
+		\end{minipage}
+	\end{lrbox}
+	\begin{center}
+		\begin{tikzpicture}
+		\node[styleBoiteRegle] (box){\usebox{\regleBoiteCmd}};
+		\node[styleTitreRegle] at (box.north) {\regleTitre};
+		\end{tikzpicture}
+	\end{center}
+}
+\NewDocumentEnvironment{regleBoite2}{o}{%
+	\IfValueTF {#1}{
+		\renewcommand{\regleTitre}{\textbf{Règle (#1)}}
+	}{
+		\renewcommand{\regleTitre}{\textbf{Règle}}
+	}
+	\begin{lrbox}{\regleBoiteCmd}%
+		\begin{minipage}[!h]{\linewidth-1cm}
+		}%
+		{%
+		\end{minipage}
+	\end{lrbox}
+	\begin{center}
+		\begin{tikzpicture}
+		\node[styleBoiteRegle] (box){\usebox{\regleBoiteCmd}};
+		\node[styleTitreRegle] at (box.north) {\regleTitre};
+		\end{tikzpicture}
+	\end{center}
+}
+\NewDocumentEnvironment{regleBoite3}{o}{%
+	\refstepcounter{regleCount}
+	\IfValueTF {#1}{
+		\renewcommand{\regleTitre}{\textbf{Règles \theregleCount \ (#1)}}
+	}{
+	\renewcommand{\regleTitre}{\textbf{Règles \theregleCount}}
+}
+\begin{lrbox}{\regleBoiteCmd}%
+	\begin{minipage}[!h]{\linewidth-1cm}
+	}%
+	{%
+	\end{minipage}
+\end{lrbox}
+\begin{center}
+	\begin{tikzpicture}
+	\node[styleBoiteRegle] (box){\usebox{\regleBoiteCmd}};
+	\node[styleTitreRegle] at (box.north) {\regleTitre};
+	\end{tikzpicture}
+\end{center}
+}
+\NewDocumentEnvironment{regleBoite4}{o}{%
+	\IfValueTF {#1}{
+		\renewcommand{\regleTitre}{\textbf{Règles (#1)}}
+	}{
+	\renewcommand{\regleTitre}{\textbf{Règles}}
+}
+\begin{lrbox}{\regleBoiteCmd}%
+	\begin{minipage}[!h]{\linewidth-1cm}
+	}%
+	{%
+	\end{minipage}
+\end{lrbox}
+\begin{center}
+	\begin{tikzpicture}
+	\node[styleBoiteRegle] (box){\usebox{\regleBoiteCmd}};
+	\node[styleTitreRegle] at (box.north) {\regleTitre};
+	\end{tikzpicture}
+\end{center}
+}
+
+\NewDocumentCommand{\regle}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{regleBoite2}[#2]
+				{#3}
+			\end{regleBoite2}
+		}{
+			\begin{regleBoite2}
+				{#3}
+			\end{regleBoite2}
+		}		
+	}{
+		\IfValueTF {#2}{
+			\begin{regleBoite1}[#2]
+				{#3}
+			\end{regleBoite1}
+		}{
+			\begin{regleBoite1}
+				{#3}
+			\end{regleBoite1}
+		}
+	}
+}
+
+\NewDocumentCommand{\regles}{s o >{\TrimSpaces}m}{
+	\IfBooleanTF {#1}{
+		\IfValueTF {#2}{
+			\begin{regleBoite4}[#2]
+				{#3}
+			\end{regleBoite4}
+		}{
+			\begin{regleBoite4}
+				{#3}
+			\end{regleBoite4}
+		}		
+	}{
+		\IfValueTF {#2}{
+			\begin{regleBoite3}[#2]
+				{#3}
+			\end{regleBoite3}
+		}{
+			\begin{regleBoite3}
+				{#3}
+			\end{regleBoite3}
+		}
+	}
+}

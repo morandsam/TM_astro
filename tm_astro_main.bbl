@@ -1,0 +1,311 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{audouzeAstrophysiqueNucleaire2003}{book}{}
+      \name{author}{2}{}{%
+        {{hash=400345c4bf33857cdc1fa387ec825441}{%
+           family={Audouze},
+           familyi={A\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=21fcd06069585afb4ae44ee80fb8136a}{%
+           family={Vauclair},
+           familyi={V\bibinitperiod},
+           given={Sylvie},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \list{publisher}{1}{%
+        {Presses universitaires de France}%
+      }
+      \strng{namehash}{ca0d84d2134494f7744740bd0c6f4796}
+      \strng{fullhash}{ca0d84d2134494f7744740bd0c6f4796}
+      \strng{bibnamehash}{ca0d84d2134494f7744740bd0c6f4796}
+      \strng{authorbibnamehash}{ca0d84d2134494f7744740bd0c6f4796}
+      \strng{authornamehash}{ca0d84d2134494f7744740bd0c6f4796}
+      \strng{authorfullhash}{ca0d84d2134494f7744740bd0c6f4796}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4e éd. mise à jour}
+      \field{isbn}{978-2-13-053300-9}
+      \field{number}{1473}
+      \field{pagetotal}{127}
+      \field{series}{Que Sais-Je?}
+      \field{title}{L'astrophysique Nucléaire}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \keyw{Astrophysique nucléaire}
+    \endentry
+    \entry{bouquetINTRODUCTIONAUXSUPERNOVAE}{article}{}
+      \name{author}{1}{}{%
+        {{hash=feb93420f3db326089da98b2f08274ee}{%
+           family={Bouquet},
+           familyi={B\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{feb93420f3db326089da98b2f08274ee}
+      \strng{fullhash}{feb93420f3db326089da98b2f08274ee}
+      \strng{bibnamehash}{feb93420f3db326089da98b2f08274ee}
+      \strng{authorbibnamehash}{feb93420f3db326089da98b2f08274ee}
+      \strng{authornamehash}{feb93420f3db326089da98b2f08274ee}
+      \strng{authorfullhash}{feb93420f3db326089da98b2f08274ee}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{french}
+      \field{title}{INTRODUCTION AUX SUPERNOVAE}
+      \field{pages}{48}
+      \range{pages}{1}
+    \endentry
+    \entry{branchSupernovaExplosions2017}{book}{}
+      \name{author}{2}{}{%
+        {{hash=7f0fe96ca92e2c419da15fa084b2ed48}{%
+           family={Branch},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ace72176e43ccc1f5a474f1f1b7b7999}{%
+           family={Wheeler},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi Craig},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Garching}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{99c0bb971d4dc24f42065edc548a8549}
+      \strng{fullhash}{99c0bb971d4dc24f42065edc548a8549}
+      \strng{bibnamehash}{99c0bb971d4dc24f42065edc548a8549}
+      \strng{authorbibnamehash}{99c0bb971d4dc24f42065edc548a8549}
+      \strng{authornamehash}{99c0bb971d4dc24f42065edc548a8549}
+      \strng{authorfullhash}{99c0bb971d4dc24f42065edc548a8549}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-662-55052-6}
+      \field{pagetotal}{721}
+      \field{title}{Supernova Explosions}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \keyw{Supernovae}
+    \endentry
+    \entry{comtegeorgesSyntheseElementsChimiques}{online}{}
+      \name{author}{4}{}{%
+        {{hash=1bb739eecad4f1bdcc3e4e109ae94667}{%
+           family={{Comte Georges}},
+           familyi={C\bibinitperiod}}}%
+        {{hash=0d19ac8773d2ec6c97cf85d1751dd7af}{%
+           family={{Dasset Benoît}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=3ce015864093c2c253f780a0051ffe95}{%
+           family={{Ramponi Michel}},
+           familyi={R\bibinitperiod}}}%
+        {{hash=d49127de06635de4ccff23403a0ba1e7}{%
+           family={{Trouillot Gérard}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{8929aabfdf90cedd28ddf5f798174dad}
+      \strng{fullhash}{1072a0f672cfc66df5ec4cce2717b245}
+      \strng{bibnamehash}{8929aabfdf90cedd28ddf5f798174dad}
+      \strng{authorbibnamehash}{8929aabfdf90cedd28ddf5f798174dad}
+      \strng{authornamehash}{8929aabfdf90cedd28ddf5f798174dad}
+      \strng{authorfullhash}{1072a0f672cfc66df5ec4cce2717b245}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{slideplayer.fr}
+      \field{langid}{french}
+      \field{title}{La synthèse des éléments chimiques - ppt télécharger}
+      \field{urlday}{28}
+      \field{urlmonth}{3}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://slideplayer.fr/slide/1139670/
+      \endverb
+      \verb{url}
+      \verb https://slideplayer.fr/slide/1139670/
+      \endverb
+    \endentry
+    \entry{esslingerGeantesRouges}{online}{}
+      \name{author}{1}{}{%
+        {{hash=72424c37dc6141186a63dd9e8a369f61}{%
+           family={Esslinger},
+           familyi={E\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{fullhash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{bibnamehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{authorbibnamehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{authornamehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{authorfullhash}{72424c37dc6141186a63dd9e8a369f61}
+      \field{extraname}{1}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astronomie et Astrophysique}
+      \field{langid}{french}
+      \field{title}{Les géantes rouges}
+      \field{urlday}{27}
+      \field{urlmonth}{3}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.astronomes.com/le-soleil-et-les-etoiles/geante-rouge
+      \endverb
+      \verb{url}
+      \verb https://www.astronomes.com/le-soleil-et-les-etoiles/geante-rouge
+      \endverb
+    \endentry
+    \entry{esslingerNebuleusesPlanetaires}{online}{}
+      \name{author}{1}{}{%
+        {{hash=72424c37dc6141186a63dd9e8a369f61}{%
+           family={Esslinger},
+           familyi={E\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{fullhash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{bibnamehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{authorbibnamehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{authornamehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{authorfullhash}{72424c37dc6141186a63dd9e8a369f61}
+      \field{extraname}{2}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astronomie et Astrophysique}
+      \field{langid}{french}
+      \field{title}{Les nébuleuses planétaires}
+      \field{urlday}{30}
+      \field{urlmonth}{3}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.astronomes.com/le-soleil-et-les-etoiles/nebuleuse-planetaire
+      \endverb
+      \verb{url}
+      \verb https://www.astronomes.com/le-soleil-et-les-etoiles/nebuleuse-planetaire
+      \endverb
+    \endentry
+    \entry{esslingerSupergeantes}{online}{}
+      \name{author}{1}{}{%
+        {{hash=72424c37dc6141186a63dd9e8a369f61}{%
+           family={Esslinger},
+           familyi={E\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{fullhash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{bibnamehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{authorbibnamehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{authornamehash}{72424c37dc6141186a63dd9e8a369f61}
+      \strng{authorfullhash}{72424c37dc6141186a63dd9e8a369f61}
+      \field{extraname}{3}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astronomie et Astrophysique}
+      \field{langid}{french}
+      \field{title}{Les supergéantes}
+      \field{urlday}{30}
+      \field{urlmonth}{3}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.astronomes.com/la-fin-des-etoiles-massives/supergeante
+      \endverb
+      \verb{url}
+      \verb https://www.astronomes.com/la-fin-des-etoiles-massives/supergeante
+      \endverb
+    \endentry
+    \entry{prialnikIntroductionTheoryStellar2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=68979ce5790336fc7cc6ad5743584f27}{%
+           family={Prialnik},
+           familyi={P\bibinitperiod},
+           given={Dina},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{68979ce5790336fc7cc6ad5743584f27}
+      \strng{fullhash}{68979ce5790336fc7cc6ad5743584f27}
+      \strng{bibnamehash}{68979ce5790336fc7cc6ad5743584f27}
+      \strng{authorbibnamehash}{68979ce5790336fc7cc6ad5743584f27}
+      \strng{authornamehash}{68979ce5790336fc7cc6ad5743584f27}
+      \strng{authorfullhash}{68979ce5790336fc7cc6ad5743584f27}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd ed}
+      \field{isbn}{978-0-521-86604-0}
+      \field{langid}{english}
+      \field{pagetotal}{314}
+      \field{title}{An Introduction to the Theory of Stellar Structure and Evolution}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \keyw{Étoiles,évolution stellaire,structure interne (astronomie)}
+    \endentry
+    \entry{FaconVivrePropre}{online}{}
+      \field{sortinit}{U}
+      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
+      \field{labeltitlesource}{title}
+      \field{title}{Une Façon de Vivre Propre Aux Étoiles - {{La}} Phase d'étoile Géante}
+      \field{urlday}{27}
+      \field{urlmonth}{3}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.astrosurf.com/luxorion/vie-etoiles5.htm
+      \endverb
+      \verb{url}
+      \verb http://www.astrosurf.com/luxorion/vie-etoiles5.htm
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{Processo2019}
+\endrefsection
+\endinput
+
