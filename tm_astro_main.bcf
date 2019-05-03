@@ -1995,15 +1995,15 @@
     <bcf:datasource type="file" datatype="bibtex">TM.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">esslingerSupergeantes</bcf:citekey>
-    <bcf:citekey order="2">comtegeorgesSyntheseElementsChimiques</bcf:citekey>
-    <bcf:citekey order="3">esslingerGeantesRouges</bcf:citekey>
-    <bcf:citekey order="4">esslingerNebuleusesPlanetaires</bcf:citekey>
-    <bcf:citekey order="5">prialnikIntroductionTheoryStellar2009</bcf:citekey>
-    <bcf:citekey order="6">audouzeAstrophysiqueNucleaire2003</bcf:citekey>
-    <bcf:citekey order="7">branchSupernovaExplosions2017</bcf:citekey>
-    <bcf:citekey order="8">bouquetINTRODUCTIONAUXSUPERNOVAE</bcf:citekey>
-    <bcf:citekey order="9">FaconVivrePropre</bcf:citekey>
+    <bcf:citekey order="1" nocite="1">esslingerSupergeantes</bcf:citekey>
+    <bcf:citekey order="2" nocite="1">comtegeorgesSyntheseElementsChimiques</bcf:citekey>
+    <bcf:citekey order="3" nocite="1">esslingerGeantesRouges</bcf:citekey>
+    <bcf:citekey order="4" nocite="1">esslingerNebuleusesPlanetaires</bcf:citekey>
+    <bcf:citekey order="5" nocite="1">prialnikIntroductionTheoryStellar2009</bcf:citekey>
+    <bcf:citekey order="6" nocite="1">audouzeAstrophysiqueNucleaire2003</bcf:citekey>
+    <bcf:citekey order="7" nocite="1">branchSupernovaExplosions2017</bcf:citekey>
+    <bcf:citekey order="8" nocite="1">bouquetINTRODUCTIONAUXSUPERNOVAE</bcf:citekey>
+    <bcf:citekey order="9" nocite="1">FaconVivrePropre</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

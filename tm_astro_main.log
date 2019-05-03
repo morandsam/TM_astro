@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  2 MAY 2019 22:23
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  3 MAY 2019 23:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2271,13 +2271,13 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 )
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 49.
+less on input line 46.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 50.
+less on input line 47.
 
-Package hyperref Info: Option `breaklinks' set `true' on input line 120.
+Package hyperref Info: Option `breaklinks' set `true' on input line 118.
 (d:/texlive/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
 
@@ -2567,37 +2567,40 @@ Package biblatex Info: ... file 'french.lbx' found.
 File: french.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 (./tm_astro_main.aux (./tm_astro_chap01.aux) (./tm_astro_chap02.aux)
-(./tm_astro_chap03.aux) (./tm_astro_chap04.aux) (./tm_astro_chap05.aux)
-(./tm_astro_conclu.aux) (./tm_astro_appendix.aux))
+(./tm_astro_chap03.aux)
+No file tm_astro_chap04.aux.
+(./tm_astro_chap05.aux)
+No file tm_astro_conclu.aux.
+No file tm_astro_appendix.aux.
+)
 \openout1 = `tm_astro_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 14.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 14.
-
-(d:/texlive/texlive/2018/texmf-dist/tex/latex/tipa/t3cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 13.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 13.
+ (d:/texlive/texlive/2018/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -2633,7 +2636,7 @@ LaTeX Font Info:    ... okay on input line 14.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 14.
+LaTeX Info: Redefining \microtypecontext on input line 13.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -2663,10 +2666,10 @@ File: se-pdfdoc.def 2016/05/16 v1.11 stringenc: PDFDocEncoding
 (d:/texlive/texlive/2018/texmf-dist/tex/generic/oberdiek/se-utf32be.def
 File: se-utf32be.def 2016/05/16 v1.11 stringenc: UTF-32BE
 )
-Package hyperref Info: Link coloring ON on input line 14.
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+Package hyperref Info: Link coloring ON on input line 13.
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
 
 (./tm_astro_main.out) (./tm_astro_main.out)
 \@outlinefile=\write10
@@ -2681,19 +2684,19 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 14.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 14.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 14.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 14.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 14.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 14.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 14.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 13.
 
 Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             'latinmodern-math.otf' with options
@@ -2741,15 +2744,15 @@ Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=MathScriptScript}
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 14.
+(Font)              `operators' in the math version `normal' on input line 13.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 14.
+ line 13.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 14.
+(Font)              `operators' in the math version `bold' on input line 13.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/bx/n on inp
-ut line 14.
+ut line 13.
 
 Package fontspec Info: latinmodern-math scale = 1.00001.
 
@@ -2821,15 +2824,15 @@ guage=DFLT;"
 (fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 14.
+(Font)              `symbols' in the math version `normal' on input line 13.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 14.
+t line 13.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 14.
+(Font)              `symbols' in the math version `bold' on input line 13.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/bx/n on inp
-ut line 14.
+ut line 13.
 
 Package fontspec Info: latinmodern-math scale = 0.99999.
 
@@ -2884,16 +2887,16 @@ guage=DFLT;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 1
-4.
+3.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 14.
+t line 13.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 14.
+(Font)              `largesymbols' in the math version `bold' on input line 13.
 
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/bx/n on inp
-ut line 14.
+ut line 13.
 
 
 Package unicode-math Warning: Using \overbracket and \underbracket from
@@ -2920,28 +2923,28 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 14.
-Package biblatex Info: Reference segment=0 on input line 14.
+Package biblatex Info: Reference section=0 on input line 13.
+Package biblatex Info: Reference segment=0 on input line 13.
 
 Using optional text marked with sansReponse. 
 
-Package chemgreek Info: Activating mapping `fontspec' on line 14.
+Package chemgreek Info: Activating mapping `fontspec' on line 13.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 14.
+LaTeX Info: Redefining \selectfont on input line 13.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 14.
+(Font)              scaled to size 10.95015pt on input line 13.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.6651pt on input line 14.
+(Font)              scaled to size 7.6651pt on input line 13.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.47508pt on input line 14.
+(Font)              scaled to size 5.47508pt on input line 13.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 14.
+(Font)              scaled to size 10.94983pt on input line 13.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.66487pt on input line 14.
+(Font)              scaled to size 7.66487pt on input line 13.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.47491pt on input line 14.
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+(Font)              scaled to size 5.47491pt on input line 13.
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
 
 (d:/texlive/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2949,7 +2952,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (d:/texlive/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
 
 (d:/texlive/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2957,7 +2960,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (d:/texlive/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+esvect on input line 14.
+LaTeX Font Info:    Try loading font information for U+esvect on input line 13.
 
 
 (d:/texlive/texlive/2018/texmf-dist/tex/latex/esvect/uesvect.fd
@@ -2965,9 +2968,9 @@ File: uesvect.fd
 )
 
 LaTeX Font Warning: Font shape `U/esvect/m/n' in size <5.475> not available
-(Font)              size <5> substituted on input line 14.
+(Font)              size <5> substituted on input line 13.
 
-LaTeX Font Info:    Try loading font information for U+pxsyc on input line 14.
+LaTeX Font Info:    Try loading font information for U+pxsyc on input line 13.
 (d:/texlive/texlive/2018/texmf-dist/tex/latex/pxfonts/upxsyc.fd
 File: upxsyc.fd 2000/12/14 v1.0
 )
@@ -2992,9 +2995,9 @@ Chapitre 2.
 ]
 File: images/cno-pp.pdf Graphic file (type pdf)
 <use images/cno-pp.pdf>
+ [3]
 File: images/hr-diagram.pdf Graphic file (type pdf)
 <use images/hr-diagram.pdf>
- [3]
 File: images/compo-fin-sq.pdf Graphic file (type pdf)
 <use images/compo-fin-sq.pdf>
  [4]
@@ -3035,24 +3038,34 @@ File: images/lobederoche.pdf Graphic file (type pdf)
  [11]
 File: images/processusr.pdf Graphic file (type pdf)
 <use images/processusr.pdf>
-) [12] [15
+) [12]
+(d:/texlive/texlive/2018/texmf-dist/tex/latex/titlesec/frame.tss
+File: frame.tss 2016/03/15
+)
+
+LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
+(Font)              using `TU/lmr/bx/n' instead on input line 39.
+
+Package atenddvi Info: Last page = 12.
+[14
+
 
 
 
 
 
 ]
-Package atenddvi Info: Last page = 13.
- [16
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 41.
- (./tm_astro_main.aux (./tm_astro_chap01.aux)
-(./tm_astro_chap02.aux) (./tm_astro_chap03.aux) (./tm_astro_chap04.aux)
-(./tm_astro_chap05.aux) (./tm_astro_conclu.aux) (./tm_astro_appendix.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 41.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 43.
+ (./tm_astro_main.aux (./tm_astro_chap01.aux) (./tm_astro_chap02.aux)
+(./tm_astro_chap03.aux)
+No file tm_astro_chap04.aux.
+(./tm_astro_chap05.aux)
+No file tm_astro_conclu.aux.
+No file tm_astro_appendix.aux.
+)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 43.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
 Package rerunfilecheck Info: File `tm_astro_main.out' has not changed.
 (rerunfilecheck)             Checksum: 4C837BDFCF84E8AB12AA5ADF2DF5DB19.
 
@@ -3060,17 +3073,20 @@ Package rerunfilecheck Info: File `tm_astro_main.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.63126pt have occurred.
 
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package logreq Info: Writing requests to 'tm_astro_main.run.xml'.
 \openout1 = `tm_astro_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68071 strings out of 492933
- 1341737 string characters out of 6133145
- 2091967 words of memory out of 5000000
- 70977 multiletter control sequences out of 15000+600000
- 549196 words of font info for 171 fonts, out of 8000000 for 9000
+ 68074 strings out of 492933
+ 1341868 string characters out of 6133145
+ 2080140 words of memory out of 5000000
+ 70986 multiletter control sequences out of 15000+600000
+ 549212 words of font info for 173 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,15n,109p,1415b,33194s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,15n,109p,1415b,33192s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tm_astro_main.pdf (13 pages).
+Output written on tm_astro_main.pdf (12 pages).

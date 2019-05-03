@@ -21,13 +21,10 @@
 % Metadonnées PERSONNELLES et choix de LICENCE pour les documents PDF
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypersetup{
-	pdftitle={Cours d'introduction à LaTeX},
-	pdfsubject={Introduction à LaTeX},
-	pdfkeywords={LaTeX} {Collège} {college} {LaTeX} {exercices} {introduction} {extensions} {exemple},
-	pdfauthor={Samuel Vannay - CC-Licence : http://creativecommons.org/licenses/by-nc-sa/3.0/ch},
-	% Pour insérer une licence Creative Commons (machine readable) dans le fichier pdf
-	pdfcopyright={Cette oeuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 Suisse (CC BY-NC-SA 3.0 CH)},
-   	pdflicenseurl={http://creativecommons.org/licenses/by-nc-sa/3.0/ch}
+	pdftitle={TM-ASTRO-TR-03},
+	pdfsubject={travail de maturité sur la mort des étoiles massives et les avancées attendues par l'E-ELT dans le domaine de l'enrichissement du milieu interstellaire},
+	pdfkeywords={LaTeX} {Collège} {college} {LaTeX} {astrophysics} {star} {astronomy} {elt},
+	pdfauthor={Samuel Morand}
 }
 
 
@@ -69,16 +66,17 @@
 % ----------------------------------------------------------------------------------------------------------------
 % Pour les chapitres
 \newcommand{\chapterFormat}{%
-	\titleformat{\chapter}[frame]			% frame pour avoir un cadre
-		{\normalfont\normalsize\scshape}	% Format du bandeau
-		{Chapitre \arabic{chapter} }		% Texte du bandeau
-		{15pt}								% avec frame : esp. vertical autour du titre
-		{\LARGE\bfseries\filcenter}[]		% avant la composition du titre
+	\titleformat{\chapter}[display]
+		{\normalfont\Huge\bfseries}
+		{\fontsize{100pt}{100pt}\selectfont\raggedright\thechapter}
+		{1em}
+		{\vspace{-2.7cm}\filleft\Huge}
+		[{\titlerule}]
 	
 	\titlespacing{\chapter}					% régler l'espacement autour du titre de chapitre
 		{0pt}								% à gauche
 		{-18pt}								% avant
-		{15pt}								% après
+		{50pt}								% après
 		[0cm]								% à droite
 }
 % Pour les annexes
