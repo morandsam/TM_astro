@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  4 MAY 2019 10:28
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  4 MAY 2019 14:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2998,11 +2998,11 @@ File: images/cno-pp.pdf Graphic file (type pdf)
  [4]
 File: images/hr-diagram.pdf Graphic file (type pdf)
 <use images/hr-diagram.pdf>
-File: images/compo-fin-sq.pdf Graphic file (type pdf)
-<use images/compo-fin-sq.pdf>
+File: images/compo_sp.pdf Graphic file (type pdf)
+<use images/compo_sp.pdf>
  [5] [6]
-File: images/helium-flash.pdf Graphic file (type pdf)
-<use images/helium-flash.pdf>
+File: images/compo_sp_gr.pdf Graphic file (type pdf)
+<use images/compo_sp_gr.pdf>
  [7]
 File: images/m27.pdf Graphic file (type pdf)
 <use images/m27.pdf>
@@ -3035,12 +3035,9 @@ File: images/lobederoche.pdf Graphic file (type pdf)
 File: images/processusr.pdf Graphic file (type pdf)
 <use images/processusr.pdf>
 ) [13]
-(d:/texlive/texlive/2018/texmf-dist/tex/latex/titlesec/frame.tss
-File: frame.tss 2016/03/15
-)
 
-LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
-(Font)              using `TU/lmr/bx/n' instead on input line 39.
+LaTeX Warning: Citation 'courbinfredericPolycopieAstroIEPFL' undefined on input
+ line 36.
 
 Package atenddvi Info: Last page = 12.
 [14
@@ -3070,18 +3067,23 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.63126pt have occurred.
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                tm_astro_main
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'tm_astro_main.run.xml'.
 \openout1 = `tm_astro_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68074 strings out of 492933
- 1341868 string characters out of 6133145
- 2081108 words of memory out of 5000000
- 70986 multiletter control sequences out of 15000+600000
- 549212 words of font info for 173 fonts, out of 8000000 for 9000
+ 68061 strings out of 492933
+ 1341504 string characters out of 6133145
+ 2081178 words of memory out of 5000000
+ 70978 multiletter control sequences out of 15000+600000
+ 549196 words of font info for 171 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  79i,15n,109p,1415b,33192s stack positions out of 5000i,500n,10000p,200000b,80000s
 
