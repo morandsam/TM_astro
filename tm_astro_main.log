@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  3 MAY 2019 23:44
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  4 MAY 2019 10:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2987,7 +2987,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 (./tm_astro_chap02.tex
 Chapitre 2.
-[2
+[3
 
 
 
@@ -2995,50 +2995,46 @@ Chapitre 2.
 ]
 File: images/cno-pp.pdf Graphic file (type pdf)
 <use images/cno-pp.pdf>
- [3]
+ [4]
 File: images/hr-diagram.pdf Graphic file (type pdf)
 <use images/hr-diagram.pdf>
 File: images/compo-fin-sq.pdf Graphic file (type pdf)
 <use images/compo-fin-sq.pdf>
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
-
- []
-
-[5]
+ [5] [6]
 File: images/helium-flash.pdf Graphic file (type pdf)
 <use images/helium-flash.pdf>
- [6]
+ [7]
 File: images/m27.pdf Graphic file (type pdf)
 <use images/m27.pdf>
 File: images/oignon.pdf Graphic file (type pdf)
 <use images/oignon.pdf>
- [7]
-Overfull \hbox (3.595pt too wide) in paragraph at lines 112--113
+ [8]
+Overfull \hbox (3.595pt too wide) in paragraph at lines 114--115
 []\TU/lmr/m/n/10.95 Lorsque les réactions thermonucléaires prennent fin dans le
  cœur de l’étoile, ce-dernier se contracte
  []
 
 File: images/m1.pdf Graphic file (type pdf)
 <use images/m1.pdf>
-) [8]
+) [9]
 \openout2 = `tm_astro_chap03.aux'.
 
  (./tm_astro_chap03.tex
 Chapitre 3.
-[9
+[10
 
 
 
-] [10]
+]
 File: images/lightcurves.pdf Graphic file (type pdf)
 <use images/lightcurves.pdf>
+ [11]
 File: images/lobederoche.pdf Graphic file (type pdf)
 <use images/lobederoche.pdf>
- [11]
+ [12]
 File: images/processusr.pdf Graphic file (type pdf)
 <use images/processusr.pdf>
-) [12]
+) [13]
 (d:/texlive/texlive/2018/texmf-dist/tex/latex/titlesec/frame.tss
 File: frame.tss 2016/03/15
 )
@@ -3083,7 +3079,7 @@ Package logreq Info: Writing requests to 'tm_astro_main.run.xml'.
 Here is how much of TeX's memory you used:
  68074 strings out of 492933
  1341868 string characters out of 6133145
- 2080140 words of memory out of 5000000
+ 2081108 words of memory out of 5000000
  70986 multiletter control sequences out of 15000+600000
  549212 words of font info for 173 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
