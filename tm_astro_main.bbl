@@ -56,6 +56,7 @@
       \field{title}{L'astrophysique Nucléaire}
       \field{year}{2003}
       \field{dateera}{ce}
+      \true{nocite}
       \keyw{Astrophysique nucléaire}
     \endentry
     \entry{bouquetINTRODUCTIONAUXSUPERNOVAE}{article}{}
@@ -78,6 +79,7 @@
       \field{labeltitlesource}{title}
       \field{langid}{french}
       \field{title}{INTRODUCTION AUX SUPERNOVAE}
+      \true{nocite}
       \field{pages}{48}
       \range{pages}{1}
     \endentry
@@ -115,6 +117,7 @@
       \field{title}{Supernova Explosions}
       \field{year}{2017}
       \field{dateera}{ce}
+      \true{nocite}
       \keyw{Supernovae}
     \endentry
     \entry{comtegeorgesSyntheseElementsChimiques}{online}{}
@@ -149,11 +152,29 @@
       \field{urlmonth}{3}
       \field{urlyear}{2019}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{urlraw}
       \verb https://slideplayer.fr/slide/1139670/
       \endverb
       \verb{url}
       \verb https://slideplayer.fr/slide/1139670/
+      \endverb
+    \endentry
+    \entry{EquationEtatInterieur}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labeltitlesource}{title}
+      \field{title}{Equation d'état à l'intérieur d'une Étoile}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb http://chaours.rv.pagesperso-orange.fr/physique/Cosmo/soleil.htm
+      \endverb
+      \verb{url}
+      \verb http://chaours.rv.pagesperso-orange.fr/physique/Cosmo/soleil.htm
       \endverb
     \endentry
     \entry{esslingerGeantesRouges}{online}{}
@@ -182,6 +203,7 @@
       \field{urlmonth}{3}
       \field{urlyear}{2019}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{urlraw}
       \verb https://www.astronomes.com/le-soleil-et-les-etoiles/geante-rouge
       \endverb
@@ -215,6 +237,7 @@
       \field{urlmonth}{3}
       \field{urlyear}{2019}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{urlraw}
       \verb https://www.astronomes.com/le-soleil-et-les-etoiles/nebuleuse-planetaire
       \endverb
@@ -248,12 +271,62 @@
       \field{urlmonth}{3}
       \field{urlyear}{2019}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{urlraw}
       \verb https://www.astronomes.com/la-fin-des-etoiles-massives/supergeante
       \endverb
       \verb{url}
       \verb https://www.astronomes.com/la-fin-des-etoiles-massives/supergeante
       \endverb
+    \endentry
+    \entry{courbinfredericPolycopieAstroIEPFL}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=bdfc34ce96d75ebe920f5fc19009673d}{%
+           family={Frédéric},
+           familyi={F\bibinitperiod},
+           given={Courbin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5a96f39409aba711daeb0a1ba7f6b60f}{%
+           family={{Meylan Georges}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b236cb6e84e9bbbd4e386c0854b1a792}
+      \strng{fullhash}{b236cb6e84e9bbbd4e386c0854b1a792}
+      \strng{bibnamehash}{b236cb6e84e9bbbd4e386c0854b1a792}
+      \strng{authorbibnamehash}{b236cb6e84e9bbbd4e386c0854b1a792}
+      \strng{authornamehash}{b236cb6e84e9bbbd4e386c0854b1a792}
+      \strng{authorfullhash}{b236cb6e84e9bbbd4e386c0854b1a792}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{french}
+      \field{title}{Polycopié\_AstroI\_EPFL.pdf}
+      \true{nocite}
+    \endentry
+    \entry{petriPhysiqueStellaire}{article}{}
+      \name{author}{1}{}{%
+        {{hash=213ec240aeda35bcaae06715bcd7442c}{%
+           family={Pétri},
+           familyi={P\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{213ec240aeda35bcaae06715bcd7442c}
+      \strng{fullhash}{213ec240aeda35bcaae06715bcd7442c}
+      \strng{bibnamehash}{213ec240aeda35bcaae06715bcd7442c}
+      \strng{authorbibnamehash}{213ec240aeda35bcaae06715bcd7442c}
+      \strng{authornamehash}{213ec240aeda35bcaae06715bcd7442c}
+      \strng{authorfullhash}{213ec240aeda35bcaae06715bcd7442c}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{french}
+      \field{title}{Physique stellaire}
+      \true{nocite}
+      \field{pages}{285}
+      \range{pages}{1}
     \endentry
     \entry{prialnikIntroductionTheoryStellar2009}{book}{}
       \name{author}{1}{}{%
@@ -286,7 +359,70 @@
       \field{title}{An Introduction to the Theory of Stellar Structure and Evolution}
       \field{year}{2009}
       \field{dateera}{ce}
+      \true{nocite}
       \keyw{Étoiles,évolution stellaire,structure interne (astronomie)}
+    \endentry
+    \entry{prof.shudemaoStellarEquationPdf}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9dca4f8d69271ba785799b7c5965a8f8}{%
+           family={{Prof. Shude Mao}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{9dca4f8d69271ba785799b7c5965a8f8}
+      \strng{fullhash}{9dca4f8d69271ba785799b7c5965a8f8}
+      \strng{bibnamehash}{9dca4f8d69271ba785799b7c5965a8f8}
+      \strng{authorbibnamehash}{9dca4f8d69271ba785799b7c5965a8f8}
+      \strng{authornamehash}{9dca4f8d69271ba785799b7c5965a8f8}
+      \strng{authorfullhash}{9dca4f8d69271ba785799b7c5965a8f8}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{{{stellarEquation}}.Pdf}
+      \field{urlday}{9}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb http://www.jb.man.ac.uk/~smao/starHtml/stellarEquation.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.jb.man.ac.uk/~smao/starHtml/stellarEquation.pdf
+      \endverb
+    \endentry
+    \entry{dr.balsaterzicLecture23Pdf}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8c809bb96a7233caea6c45ac49df8d9f}{%
+           family={Terzić},
+           familyi={T\bibinitperiod},
+           given={Dr.\bibnamedelimi Balša},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c809bb96a7233caea6c45ac49df8d9f}
+      \strng{fullhash}{8c809bb96a7233caea6c45ac49df8d9f}
+      \strng{bibnamehash}{8c809bb96a7233caea6c45ac49df8d9f}
+      \strng{authorbibnamehash}{8c809bb96a7233caea6c45ac49df8d9f}
+      \strng{authornamehash}{8c809bb96a7233caea6c45ac49df8d9f}
+      \strng{authorfullhash}{8c809bb96a7233caea6c45ac49df8d9f}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Lecture\_23.Pdf}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb http://www.nicadd.niu.edu/~bterzic/PHYS652/Lecture_23.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.nicadd.niu.edu/~bterzic/PHYS652/Lecture_23.pdf
+      \endverb
     \endentry
     \entry{FaconVivrePropre}{online}{}
       \field{sortinit}{U}
@@ -297,6 +433,7 @@
       \field{urlmonth}{3}
       \field{urlyear}{2019}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{urlraw}
       \verb http://www.astrosurf.com/luxorion/vie-etoiles5.htm
       \endverb
@@ -305,7 +442,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Processo2019}
 \endrefsection
 \endinput
 

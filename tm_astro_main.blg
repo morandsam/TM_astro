@@ -1,17 +1,15 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'tm_astro_main.blg'
 [33] biber-MSWIN32:315> INFO - === 
-[65] Biber.pm:371> INFO - Reading 'tm_astro_main.bcf'
-[164] Biber.pm:889> INFO - Found 10 citekeys in bib section 0
-[178] Biber.pm:4093> INFO - Processing section 0
-[192] Biber.pm:4254> INFO - Looking for bibtex format file 'TM.bib' for section 0
-[195] bibtex.pm:1523> INFO - LaTeX decoding ...
-[215] bibtex.pm:1340> INFO - Found BibTeX data source 'TM.bib'
-[269] Utils.pm:193> WARN - I didn't find a database entry for 'Processo2019' (section 0)
-[284] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[284] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[284] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'fr-FR'
-[285] Biber.pm:3927> INFO - No sort tailoring available for locale 'fr-FR'
-[298] bbl.pm:636> INFO - Writing 'tm_astro_main.bbl' with encoding 'UTF-8'
-[302] bbl.pm:739> INFO - Output to tm_astro_main.bbl
-[302] Biber.pm:110> INFO - WARNINGS: 1
+[63] Biber.pm:371> INFO - Reading 'tm_astro_main.bcf'
+[169] Biber.pm:889> INFO - Found 14 citekeys in bib section 0
+[184] Biber.pm:4093> INFO - Processing section 0
+[199] Biber.pm:4254> INFO - Looking for bibtex format file 'tm_astro.bib' for section 0
+[202] bibtex.pm:1523> INFO - LaTeX decoding ...
+[227] bibtex.pm:1340> INFO - Found BibTeX data source 'tm_astro.bib'
+[322] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[322] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[323] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'fr-FR'
+[323] Biber.pm:3927> INFO - No sort tailoring available for locale 'fr-FR'
+[346] bbl.pm:636> INFO - Writing 'tm_astro_main.bbl' with encoding 'UTF-8'
+[353] bbl.pm:739> INFO - Output to tm_astro_main.bbl
