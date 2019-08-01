@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  31 MAY 2019 15:51
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  1 AUG 2019 14:52
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2571,8 +2571,11 @@ File: french.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 
 LaTeX Warning: Label `Fig. 3.1' multiply defined.
 
-) (./tm_astro_chap04.aux) (./tm_astro_chap05.aux) (./tm_astro_conclu.aux)
-(./tm_astro_appendix.aux))
+) (./tm_astro_chap04.aux
+
+LaTeX Warning: Label `Fig. 4.1' multiply defined.
+
+) (./tm_astro_chap05.aux) (./tm_astro_conclu.aux) (./tm_astro_appendix.aux))
 \openout1 = `tm_astro_main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -3050,11 +3053,37 @@ File: images/lobederoche.pdf Graphic file (type pdf)
  [15]
 File: images/processusr.pdf Graphic file (type pdf)
 <use images/processusr.pdf>
-) [16] [18
+) [16]
+\openout2 = `tm_astro_chap04.aux'.
+
+ (./tm_astro_chap04.tex
+Chapitre 4.
+
+Overfull \hbox (5.69615pt too wide) in paragraph at lines 9--10
+[]\TU/lmr/m/n/10.95 L’European Extremely Large Telescope est un télescope optiq
+ue actuellement en cours de construc-
+ []
+
+File: images/e-elt_i.pdf Graphic file (type pdf)
+<use images/e-elt_i.pdf>
+) [17
+
+
+
+] [18]
+\openout2 = `tm_astro_appendix.aux'.
+
+ (./tm_astro_appendix.tex
+Chapitre 7.
+File: images/cylindre.pdf Graphic file (type pdf)
+<use images/cylindre.pdf>
+[17
 
 
 
 
+
+]) [18] [19
 
 
 ] (./tm_astro_main.lof
@@ -3068,8 +3097,8 @@ Overfull \hbox (18.92pt too wide) in paragraph at lines 11--11
 \tf@lof=\write12
 \openout12 = `tm_astro_main.lof'.
 
-Package atenddvi Info: Last page = 18.
- [19
+Package atenddvi Info: Last page = 22.
+ [20
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
@@ -3080,7 +3109,7 @@ Package atveryend Info: Executing hook `AfterLastShipout' on input line 45.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 45.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `tm_astro_main.out' has not changed.
-(rerunfilecheck)             Checksum: 834ABE351123D22375FF5BA6462F6CF3.
+(rerunfilecheck)             Checksum: 21E2628CA64ECB6A83361A3EE889466C.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3094,12 +3123,12 @@ Package logreq Info: Writing requests to 'tm_astro_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68241 strings out of 492933
- 1345193 string characters out of 6133145
- 2099183 words of memory out of 5000000
- 71117 multiletter control sequences out of 15000+600000
+ 68258 strings out of 492933
+ 1345516 string characters out of 6133145
+ 2101036 words of memory out of 5000000
+ 71128 multiletter control sequences out of 15000+600000
  552695 words of font info for 199 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,15n,109p,1438b,33196s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,15n,109p,1956b,33194s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tm_astro_main.pdf (18 pages).
+Output written on tm_astro_main.pdf (22 pages).

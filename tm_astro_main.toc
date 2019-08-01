@@ -24,8 +24,11 @@
 \contentsline {subsection}{\numberline {3.1.1}Supernovas à effondrement gravitationnel}{13}{subsection.3.1.1}% 
 \contentsline {subsection}{\numberline {3.1.2}Supernovas thermonucléaires}{15}{subsection.3.1.2}% 
 \contentsline {section}{\numberline {3.2}Nucléosynthèse lors d'une supernova}{15}{section.3.2}% 
-\contentsline {chapter}{\numberline {4}L'E-ELT}{14}{chapter.4}% 
+\contentsline {chapter}{\numberline {4}L'E-ELT}{17}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Les raisons et les technologies nécessaires à la construction de l'E-ELT}{17}{section.4.1}% 
 \contentsline {chapter}{\numberline {5}Enrichissement du milieu interstellaire}{15}{chapter.5}% 
 \contentsline {chapter}{\numberline {6}Conclusion}{16}{chapter.6}% 
 \contentsline {chapter}{\numberline {7}Appendice}{17}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Modèle polytropique}{17}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}Masse de Chandrasekhar}{17}{section.7.2}% 
 \contentsfinish 
