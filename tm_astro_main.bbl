@@ -120,6 +120,47 @@
       \true{nocite}
       \keyw{Supernovae}
     \endentry
+    \entry{brissonELTDerniereGeneration2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=25b14daeada230b33f2a1bbef020ba60}{%
+           family={Brisson},
+           familyi={B\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{25b14daeada230b33f2a1bbef020ba60}
+      \strng{fullhash}{25b14daeada230b33f2a1bbef020ba60}
+      \strng{bibnamehash}{25b14daeada230b33f2a1bbef020ba60}
+      \strng{authorbibnamehash}{25b14daeada230b33f2a1bbef020ba60}
+      \strng{authornamehash}{25b14daeada230b33f2a1bbef020ba60}
+      \strng{authorfullhash}{25b14daeada230b33f2a1bbef020ba60}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{hour}{18}
+      \field{journaltitle}{Exploration spatiale}
+      \field{langid}{french}
+      \field{minute}{30}
+      \field{month}{1}
+      \field{second}{55}
+      \field{timezone}{+02\bibtzminsep 00}
+      \field{title}{Les ELT, dernière génération des grands télescopes terrestres}
+      \field{urlday}{1}
+      \field{urlmonth}{8}
+      \field{urlyear}{2019}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://blogs.letemps.ch/pierre-brisson/2017/01/18/les-elt-derniere-generation-des-grands-telescopes-terrestres/
+      \endverb
+      \verb{url}
+      \verb https://blogs.letemps.ch/pierre-brisson/2017/01/18/les-elt-derniere-generation-des-grands-telescopes-terrestres/
+      \endverb
+    \endentry
     \entry{comtegeorgesSyntheseElementsChimiques}{online}{}
       \name{author}{4}{}{%
         {{hash=1bb739eecad4f1bdcc3e4e109ae94667}{%
@@ -304,6 +345,140 @@
       \field{title}{Polycopié\_AstroI\_EPFL.pdf}
       \true{nocite}
     \endentry
+    \entry{hugotPolissageSousContraintes2015}{article}{}
+      \name{author}{1}{}{%
+        {{hash=24514c98caa68109463b511cf7856ad7}{%
+           family={Hugot},
+           familyi={H\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{24514c98caa68109463b511cf7856ad7}
+      \strng{fullhash}{24514c98caa68109463b511cf7856ad7}
+      \strng{bibnamehash}{24514c98caa68109463b511cf7856ad7}
+      \strng{authorbibnamehash}{24514c98caa68109463b511cf7856ad7}
+      \strng{authornamehash}{24514c98caa68109463b511cf7856ad7}
+      \strng{authorfullhash}{24514c98caa68109463b511cf7856ad7}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1629-4475, 2269-8418}
+      \field{journaltitle}{Photoniques}
+      \field{langid}{french}
+      \field{month}{5}
+      \field{number}{76}
+      \field{title}{Le polissage sous contraintes}
+      \field{urlday}{1}
+      \field{urlmonth}{8}
+      \field{urlyear}{2019}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{36\bibrangedash 38}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1051/photon/20157636
+      \endverb
+      \verb{urlraw}
+      \verb http://www.photoniques.com/10.1051/photon/20157636
+      \endverb
+      \verb{url}
+      \verb http://www.photoniques.com/10.1051/photon/20157636
+      \endverb
+    \endentry
+    \entry{informationeso.orgFirstInstrumentsEELT}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6c4e014a0f3df1274602bd352cb2a655}{%
+           family={{information@eso.org}},
+           familyi={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c4e014a0f3df1274602bd352cb2a655}
+      \strng{fullhash}{6c4e014a0f3df1274602bd352cb2a655}
+      \strng{bibnamehash}{6c4e014a0f3df1274602bd352cb2a655}
+      \strng{authorbibnamehash}{6c4e014a0f3df1274602bd352cb2a655}
+      \strng{authornamehash}{6c4e014a0f3df1274602bd352cb2a655}
+      \strng{authorfullhash}{6c4e014a0f3df1274602bd352cb2a655}
+      \field{extraname}{1}
+      \field{sortinit}{i}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{www.eso.org}
+      \field{langid}{french}
+      \field{title}{First Instruments for E-ELT Approved}
+      \field{urlday}{3}
+      \field{urlmonth}{8}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.eso.org/public/announcements/ann15056/
+      \endverb
+      \verb{url}
+      \verb https://www.eso.org/public/announcements/ann15056/
+      \endverb
+    \endentry
+    \entry{informationeso.orgExtremelyLargeTelescope}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6c4e014a0f3df1274602bd352cb2a655}{%
+           family={{information@eso.org}},
+           familyi={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c4e014a0f3df1274602bd352cb2a655}
+      \strng{fullhash}{6c4e014a0f3df1274602bd352cb2a655}
+      \strng{bibnamehash}{6c4e014a0f3df1274602bd352cb2a655}
+      \strng{authorbibnamehash}{6c4e014a0f3df1274602bd352cb2a655}
+      \strng{authornamehash}{6c4e014a0f3df1274602bd352cb2a655}
+      \strng{authorfullhash}{6c4e014a0f3df1274602bd352cb2a655}
+      \field{extraname}{2}
+      \field{sortinit}{i}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{french}
+      \field{title}{The Extremely Large Telescope}
+      \field{urlday}{1}
+      \field{urlmonth}{8}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.eso.org/public/teles-instr/elt/
+      \endverb
+      \verb{url}
+      \verb https://www.eso.org/public/teles-instr/elt/
+      \endverb
+    \endentry
+    \entry{MasseChandrasekhar2019}{inreference}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Wikipédia}
+      \field{day}{31}
+      \field{hour}{10}
+      \field{langid}{french}
+      \field{minute}{46}
+      \field{month}{1}
+      \field{note}{Page Version ID: 156333291}
+      \field{second}{18}
+      \field{timezone}{Z}
+      \field{title}{Masse de Chandrasekhar}
+      \field{urlday}{9}
+      \field{urlmonth}{8}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://fr.wikipedia.org/w/index.php?title=Masse_de_Chandrasekhar&oldid=156333291
+      \endverb
+      \verb{url}
+      \verb https://fr.wikipedia.org/w/index.php?title=Masse_de_Chandrasekhar&oldid=156333291
+      \endverb
+    \endentry
     \entry{petriPhysiqueStellaire}{article}{}
       \name{author}{1}{}{%
         {{hash=213ec240aeda35bcaae06715bcd7442c}{%
@@ -359,7 +534,6 @@
       \field{title}{An Introduction to the Theory of Stellar Structure and Evolution}
       \field{year}{2009}
       \field{dateera}{ce}
-      \true{nocite}
       \keyw{Étoiles,évolution stellaire,structure interne (astronomie)}
     \endentry
     \entry{prof.shudemaoStellarEquationPdf}{online}{}
@@ -390,6 +564,34 @@
       \endverb
       \verb{url}
       \verb http://www.jb.man.ac.uk/~smao/starHtml/stellarEquation.pdf
+      \endverb
+    \endentry
+    \entry{TelescopeGeantEuropeen2019}{inreference}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Wikipédia}
+      \field{day}{9}
+      \field{hour}{16}
+      \field{langid}{french}
+      \field{minute}{44}
+      \field{month}{7}
+      \field{note}{Page Version ID: 160772541}
+      \field{second}{47}
+      \field{timezone}{Z}
+      \field{title}{Télescope géant européen}
+      \field{urlday}{1}
+      \field{urlmonth}{8}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://fr.wikipedia.org/w/index.php?title=T%C3%A9lescope_g%C3%A9ant_europ%C3%A9en&oldid=160772541
+      \endverb
+      \verb{url}
+      \verb https://fr.wikipedia.org/w/index.php?title=T%C3%A9lescope_g%C3%A9ant_europ%C3%A9en&oldid=160772541
       \endverb
     \endentry
     \entry{dr.balsaterzicLecture23Pdf}{online}{}

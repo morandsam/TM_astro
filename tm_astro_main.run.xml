@@ -81,7 +81,7 @@
       <file>tm_astro_main.bcf</file>
     </requires>
     <requires type="editable">
-      <file>tm_astro.bib</file>
+      <file>TM.bib</file>
     </requires>
   </external>
 </requests>

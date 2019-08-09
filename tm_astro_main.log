@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  1 AUG 2019 14:52
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  9 AUG 2019 13:31
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2566,14 +2566,20 @@ Package biblatex Info: ... file 'french.lbx' found.
 (d:/texlive/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/french.lbx
 File: french.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
-(./tm_astro_main.aux (./tm_astro_chap01.aux) (./tm_astro_chap02.aux)
-(./tm_astro_chap03.aux
+(./tm_astro_main.aux (./tm_astro_chap01.aux) (./tm_astro_chap02.aux
+
+LaTeX Warning: Label `Fig. 2.7' multiply defined.
+
+) (./tm_astro_chap03.aux
 
 LaTeX Warning: Label `Fig. 3.1' multiply defined.
 
 ) (./tm_astro_chap04.aux
 
 LaTeX Warning: Label `Fig. 4.1' multiply defined.
+
+
+LaTeX Warning: Label `Fig. 4.2' multiply defined.
 
 ) (./tm_astro_chap05.aux) (./tm_astro_conclu.aux) (./tm_astro_appendix.aux))
 \openout1 = `tm_astro_main.aux'.
@@ -3035,6 +3041,8 @@ File: images/oignon.pdf Graphic file (type pdf)
  [11]
 File: images/m1.pdf Graphic file (type pdf)
 <use images/m1.pdf>
+File: images/evo_stel_tab.pdf Graphic file (type pdf)
+<use images/evo_stel_tab.pdf>
 ) [12]
 \openout2 = `tm_astro_chap03.aux'.
 
@@ -3066,24 +3074,42 @@ ue actuellement en cours de construc-
 
 File: images/e-elt_i.pdf Graphic file (type pdf)
 <use images/e-elt_i.pdf>
-) [17
+[17
 
 
 
 ] [18]
+Overfull \hbox (6.38605pt too wide) in paragraph at lines 48--49
+[]\TU/lmr/m/n/10.95 A ce jour, le télescope optique terrestre le plus performan
+t est le Very Large Telescope (VLT).Grâce
+ []
+
+File: images/comp_tscp.pdf Graphic file (type pdf)
+<use images/comp_tscp.pdf>
+) [19]
+\openout2 = `tm_astro_chap05.aux'.
+
+ (./tm_astro_chap05.tex
+Chapitre 5.
+) [20
+
+
+
+]
 \openout2 = `tm_astro_appendix.aux'.
 
  (./tm_astro_appendix.tex
 Chapitre 7.
 File: images/cylindre.pdf Graphic file (type pdf)
 <use images/cylindre.pdf>
+File: images/graphe_poly.pdf Graphic file (type pdf)
+<use images/graphe_poly.pdf>
 [17
 
 
 
 
-
-]) [18] [19
+] [18]) [19] [20
 
 
 ] (./tm_astro_main.lof
@@ -3093,23 +3119,30 @@ Overfull \hbox (18.92pt too wide) in paragraph at lines 11--11
 ][][][] [] 
  []
 
+
+Overfull \hbox (50.5436pt too wide) in paragraph at lines 25--25
+ [][][][][] [] [] [] [][][] [] [][][][][][][][][] [] [][][] [] [][][][][][][][]
+[][][][][] [] [][][] [][] [][][][][][][][][] [] [][][][][][][][][] [] [][][][][
+][][][][][][] [] 
+ []
+
 )
 \tf@lof=\write12
 \openout12 = `tm_astro_main.lof'.
 
-Package atenddvi Info: Last page = 22.
- [20
+Package atenddvi Info: Last page = 25.
+ [21
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 45.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 51.
  (./tm_astro_main.aux (./tm_astro_chap01.aux) (./tm_astro_chap02.aux)
 (./tm_astro_chap03.aux) (./tm_astro_chap04.aux) (./tm_astro_chap05.aux)
 (./tm_astro_conclu.aux) (./tm_astro_appendix.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 45.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 51.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `tm_astro_main.out' has not changed.
-(rerunfilecheck)             Checksum: 21E2628CA64ECB6A83361A3EE889466C.
+(rerunfilecheck)             Checksum: 7C29D6697C65CA43DCF4C953BC90F86E.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3123,12 +3156,12 @@ Package logreq Info: Writing requests to 'tm_astro_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68258 strings out of 492933
- 1345516 string characters out of 6133145
- 2101036 words of memory out of 5000000
- 71128 multiletter control sequences out of 15000+600000
+ 68300 strings out of 492933
+ 1346777 string characters out of 6133145
+ 2106909 words of memory out of 5000000
+ 71165 multiletter control sequences out of 15000+600000
  552695 words of font info for 199 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  79i,15n,109p,1956b,33194s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tm_astro_main.pdf (22 pages).
+Output written on tm_astro_main.pdf (25 pages).

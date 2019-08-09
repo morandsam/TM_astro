@@ -54,7 +54,7 @@ Cette perte est compensée par l'énergie provenant des réactions nucléaires. 
 Si nous égalons l'énergie perdue sous forme de rayonnement avec celle gagnée grâce aux fusions nucléaires, nous obtenons l'équilibre thermique:\begin{equation}\boxed{\dfrac{dL(r)}{dr}=\epsilon\hspace{1pt}\rho(r) 4\pi r^{2}}\label{Eq. 1.10}\end{equation}
 
 L'Eq. \ref{Eq. 1.10} nous permet donc de calculer le taux de variation d'énergie rayonnée, cependant, pour cela, nous devons connaître le taux de libération de l'énergie nucléaire en fonction du rayon. 
-\newpage
+
 
 \subsection{Transport d'énergie}
 
@@ -68,21 +68,21 @@ Ainsi, si une étoile satisfait les critères de la conservation de la masse (Eq
 
 \section{Modèle polytropique}\label{1.2}
 
-Afin de développer un modèle stellaire, il ne suffit pas de ne prendre en considération que la représentation macroscopique de l'étoile (§\ref{1.1}), il faut aussi tenir compte de la description microscopique de celle-ci. Cette description est donnée sous la forme d'une équation d'état. Nous allons considérer dans ce chapitre qu'une étoile est un polytrope, cela signifie que l'équation d'état (Eq. \ref{Eq. 1.13}) la décrivant ne dépend que de la pression $P$ et de la masse volumique $\rho$:\begin{equation}P=k\rho^{\gamma}\label{Eq. 1.13}\end{equation}
+Afin de développer un modèle stellaire, il ne suffit pas de ne prendre en considération que la représentation macroscopique de l'étoile (§\ref{1.1}), il faut aussi tenir compte de la description microscopique de celle-ci. Cette description est donnée sous la forme d'une équation d'état. Nous allons considérer dans ce chapitre qu'une étoile est un polytrope, cela signifie que l'équation d'état (Eq. \ref{Eq. 1.13}) la décrivant ne dépend que de la pression $P$ et de la masse volumique $\rho$:\begin{equation}P=K\rho^{\gamma}\label{Eq. 1.13}\end{equation}
 
 où k correspond à une constante arbitraire. Dans un polytrope, l'indice adiabatique $\gamma$ peut aussi être exprimé grâce à l'indice polytropique $n$ de cette manière:\begin{equation}\gamma=1+\dfrac{1}{n}\label{Eq. 1.14}\end{equation} L'indice polytropique permet de simuler une composition particulière d'étoile, cette composition peut être modifiée en fonction de la valeur que nous lui donnons. \bigskip
 
-En réunissant l'Eq. \ref{Eq. 1.3}, l'Eq. \ref{Eq. 1.7}, l'Eq. \ref{Eq. 1.13} et l'Eq. \ref{Eq. 1.14} et après simplifications, nous obtenons\footnotemark[5]:\begin{equation}\dfrac{(n+1)k}{4\pi Gn}\dfrac{1}{r^{2}}\dfrac{d}{dr}\left( \dfrac{r^{2}}{\rho^{\frac{n-1}{n}}}\dfrac{d\rho}{dr}\right) =-\rho\label{Eq. 1.15}\end{equation}
+En réunissant l'Eq. \ref{Eq. 1.3}, l'Eq. \ref{Eq. 1.7}, l'Eq. \ref{Eq. 1.13} et l'Eq. \ref{Eq. 1.14} et après simplifications, nous obtenons\footnotemark[5]:\begin{equation}\dfrac{(n+1)K}{4\pi Gn}\dfrac{1}{r^{2}}\dfrac{d}{dr}\left( \dfrac{r^{2}}{\rho^{\frac{n-1}{n}}}\dfrac{d\rho}{dr}\right) =-\rho\label{Eq. 1.15}\end{equation}
 
 \vfill
 \footnotetext[4]{Nous ne démontrerons pas les deux équations de transport d'énergie à cause de leur complexité et leur faible utilité pour ce travail.}
 \footnotetext[5]{Cette démonstration sera présentée plus en détails dans les annexes.}
 
-\newpage
+
 
 Il est utile pour la suite de la démonstration de remplacer certains termes de l'Eq. \ref{Eq. 1.15} par:
 \begin{equation}\rho=\rho_{c} \theta^{n}\hspace{3pt}\label{Eq. 1.16}\end{equation}
-\begin{equation}\left[\dfrac{(n+1)k}{4\pi G\rho^{\frac{n-1}{n}}_{c}}\right]=\alpha^{2}\hspace{3pt}\label{Eq. 1.17}\end{equation} 
+\begin{equation}\left[\dfrac{(n+1)K}{4\pi G\rho^{\frac{n-1}{n}}_{c}}\right]=\alpha^{2}\hspace{3pt}\label{Eq. 1.17}\end{equation} 
 \begin{equation}r=\alpha\hspace{1pt}\xi\label{Eq. 1.18}\end{equation}
 
 Eq. \ref{Eq. 1.16}: $\rho_{c}$ correspond à la masse volumique au centre de l'étoile, $\theta^{n}$ est une variable sans dimension
@@ -99,7 +99,7 @@ La masse $M$ d'une étoile s'obtient en combinant l'Eq. \ref{Eq. 1.3} et l'Eq. \
 
 En substituant par l'Eq. \ref{Eq. 1.19} nous obtenons:\begin{equation}M=-4\pi \alpha^{3}\rho_{c}\int_{0}^{\xi_{1}}\dfrac{d}{d\xi}\left(\xi^2\dfrac{d\theta}{d\xi}\right)d\xi=-4\pi \alpha^{3}\rho_{c}\xi^{2}_{1}\left( \dfrac{d\theta}{d\xi}\right)_{\xi_{1}}\label{Eq. 1.22}\end{equation}\bigskip
 
-Afin d'obtenir la valeur de $\xi_{1}$ qui nous permet de calculer le rayon et la masse d'une étoile, il faut résoudre l'équation de Lane-Emden (Eq. \ref{Eq. 1.19}) en fonction de l'indice polytropique $n$ choisi. Il est possible de résoudre analytiquement cette équation, pour certaines valeurs de $n$, tandis que pour d'autres nous sommes obligés d'avoir recours à des méthodes numériques.\smallskip 
+Afin d'obtenir la valeur de $\xi_{1}$ qui nous permet de calculer le rayon et la masse d'une étoile, il faut résoudre l'équation de Lane-Emden (Eq. \ref{Eq. 1.19}) en fonction de l'indice polytropique $n$ choisi (Fig. \ref{Fig. 7.2}). Il est possible de résoudre analytiquement cette équation, pour certaines valeurs de $n$, tandis que pour d'autres nous sommes obligés d'avoir recours à des méthodes numériques.\smallskip 
 
 L'inconvénient du modèle polytropique est qu'il se restreint à une sphère parfaite et sans rotation, ce qui est une bonne approximation, mais qui n'est jamais parfaitement le cas en réalité. De plus, l'indice polytropique $n$ ne permet pas de simuler n'importe quelle composition d'étoile. Il est par contre extrêmement utile, par exemple, pour décrire des étoiles de type naine blanche. 
 
@@ -107,7 +107,4 @@ L'inconvénient du modèle polytropique est qu'il se restreint à une sphère pa
 \footnotetext[6]{Cette équation a été nommée en l'honneur des physiciens Jonathan Lane et Robert Emden pour leur travail sur celle-ci.}
 \footnotetext[7]{La masse et le rayon ne sont pas les seuls observables pouvant être déterminées par ce modèle, la pression et la densité peuvent l'être aussi, mais nous n'allons pas les traiter ici.}
 \footnotetext[8]{Nous pouvons interpréter l'Eq. \ref{Eq. 1.19} comme une équation différentielle ou comme une fonction de $\theta$ par rapport à $\xi$; le premier zéro de la fonction correspond à la première valeur pour laquelle l'équation est résolue.}
-
-
-
 
