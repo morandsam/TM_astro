@@ -1993,6 +1993,7 @@
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
     <bcf:datasource type="file" datatype="bibtex">TM.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">TM.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">prialnikIntroductionTheoryStellar2009</bcf:citekey>
@@ -2014,8 +2015,12 @@
     <bcf:citekey order="17" nocite="1">TelescopeGeantEuropeen2019</bcf:citekey>
     <bcf:citekey order="18" nocite="1">brissonELTDerniereGeneration2017</bcf:citekey>
     <bcf:citekey order="19" nocite="1">hugotPolissageSousContraintes2015</bcf:citekey>
-    <bcf:citekey order="20" nocite="1">informationeso.orgFirstInstrumentsEELT</bcf:citekey>
-    <bcf:citekey order="21" nocite="1">MasseChandrasekhar2019</bcf:citekey>
+    <bcf:citekey order="20" nocite="1">MasseChandrasekhar2019</bcf:citekey>
+    <bcf:citekey order="21" nocite="1">montargesPerteMasseEtoiles</bcf:citekey>
+    <bcf:citekey order="22" nocite="1">DisqueProtoplanetaire2019</bcf:citekey>
+    <bcf:citekey order="23" nocite="1">hookSupernovaeCosmologyFuture2013</bcf:citekey>
+    <bcf:citekey order="24" nocite="1">informationeso.orgFirstInstrumentsEELT</bcf:citekey>
+    <bcf:citekey order="25" nocite="1">e-eltscienceofficeESOEELTScience</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

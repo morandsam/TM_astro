@@ -201,6 +201,63 @@
       \verb https://slideplayer.fr/slide/1139670/
       \endverb
     \endentry
+    \entry{DisqueProtoplanetaire2019}{inreference}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Wikipédia}
+      \field{day}{8}
+      \field{hour}{14}
+      \field{langid}{french}
+      \field{minute}{6}
+      \field{month}{5}
+      \field{note}{Page Version ID: 159103404}
+      \field{second}{51}
+      \field{timezone}{Z}
+      \field{title}{Disque protoplanétaire}
+      \field{urlday}{20}
+      \field{urlmonth}{8}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://fr.wikipedia.org/w/index.php?title=Disque_protoplan%C3%A9taire&oldid=159103404
+      \endverb
+      \verb{url}
+      \verb https://fr.wikipedia.org/w/index.php?title=Disque_protoplan%C3%A9taire&oldid=159103404
+      \endverb
+    \endentry
+    \entry{e-eltscienceofficeESOEELTScience}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dc10b65b82cb0ad5bfa0af444cd8b374}{%
+           family={{E-ELT Science Office}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc10b65b82cb0ad5bfa0af444cd8b374}
+      \strng{fullhash}{dc10b65b82cb0ad5bfa0af444cd8b374}
+      \strng{bibnamehash}{dc10b65b82cb0ad5bfa0af444cd8b374}
+      \strng{authorbibnamehash}{dc10b65b82cb0ad5bfa0af444cd8b374}
+      \strng{authornamehash}{dc10b65b82cb0ad5bfa0af444cd8b374}
+      \strng{authorfullhash}{dc10b65b82cb0ad5bfa0af444cd8b374}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{{ESO}} - {{E}}-{{ELT Science}}}
+      \field{urlday}{22}
+      \field{urlmonth}{8}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.eso.org/sci/facilities/eelt/science/
+      \endverb
+      \verb{url}
+      \verb https://www.eso.org/sci/facilities/eelt/science/
+      \endverb
+    \endentry
     \entry{EquationEtatInterieur}{online}{}
       \field{sortinit}{E}
       \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
@@ -345,6 +402,56 @@
       \field{title}{Polycopié\_AstroI\_EPFL.pdf}
       \true{nocite}
     \endentry
+    \entry{hookSupernovaeCosmologyFuture2013}{article}{}
+      \name{author}{1}{}{%
+        {{hash=66c4cff302392cabcaf22a019c27281f}{%
+           family={Hook},
+           familyi={H\bibinitperiod},
+           given={I.\bibnamedelimi M.},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{66c4cff302392cabcaf22a019c27281f}
+      \strng{fullhash}{66c4cff302392cabcaf22a019c27281f}
+      \strng{bibnamehash}{66c4cff302392cabcaf22a019c27281f}
+      \strng{authorbibnamehash}{66c4cff302392cabcaf22a019c27281f}
+      \strng{authornamehash}{66c4cff302392cabcaf22a019c27281f}
+      \strng{authorfullhash}{66c4cff302392cabcaf22a019c27281f}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Comment: To appear in proceedings of the Royal Society scientific discussion meeting "New windows on transients across the Universe", 23-24 April 2012}
+      \field{day}{13}
+      \field{eprinttype}{arxiv}
+      \field{issn}{1364-503X, 1471-2962}
+      \field{journaltitle}{Proc. R. Soc. A}
+      \field{month}{6}
+      \field{number}{1992}
+      \field{title}{Supernovae and {{Cosmology}} with {{Future European Facilities}}}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
+      \field{urlyear}{2019}
+      \field{volume}{371}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{20120282}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rsta.2012.0282
+      \endverb
+      \verb{eprint}
+      \verb 1211.6586
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1211.6586
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1211.6586
+      \endverb
+      \keyw{Astrophysics - Cosmology and Nongalactic Astrophysics}
+    \endentry
     \entry{hugotPolissageSousContraintes2015}{article}{}
       \name{author}{1}{}{%
         {{hash=24514c98caa68109463b511cf7856ad7}{%
@@ -478,6 +585,30 @@
       \verb{url}
       \verb https://fr.wikipedia.org/w/index.php?title=Masse_de_Chandrasekhar&oldid=156333291
       \endverb
+    \endentry
+    \entry{montargesPerteMasseEtoiles}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ab8abb5ffb5e8ab2778135f8d66a1b66}{%
+           family={Montargès},
+           familyi={M\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ab8abb5ffb5e8ab2778135f8d66a1b66}
+      \strng{fullhash}{ab8abb5ffb5e8ab2778135f8d66a1b66}
+      \strng{bibnamehash}{ab8abb5ffb5e8ab2778135f8d66a1b66}
+      \strng{authorbibnamehash}{ab8abb5ffb5e8ab2778135f8d66a1b66}
+      \strng{authornamehash}{ab8abb5ffb5e8ab2778135f8d66a1b66}
+      \strng{authorfullhash}{ab8abb5ffb5e8ab2778135f8d66a1b66}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{french}
+      \field{title}{Perte de masse des étoiles massives évoluées : l'environnement circumstellaire à haute résolution angulaire}
+      \true{nocite}
+      \field{pages}{218}
+      \range{pages}{1}
     \endentry
     \entry{petriPhysiqueStellaire}{article}{}
       \name{author}{1}{}{%

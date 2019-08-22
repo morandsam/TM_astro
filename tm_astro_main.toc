@@ -1,36 +1,36 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {french}
-\contentsline {chapter}{\numberline {1}Structure interne des étoiles}{2}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Equilibre thermodynamique}{2}{section.1.1}% 
-\contentsline {subsection}{\numberline {1.1.1}Conservation de la masse}{2}{subsection.1.1.1}% 
-\contentsline {subsection}{\numberline {1.1.2}Equilibre hydrostatique}{3}{subsection.1.1.2}% 
-\contentsline {subsection}{\numberline {1.1.3}Equilibre thermique}{3}{subsection.1.1.3}% 
-\contentsline {subsection}{\numberline {1.1.4}Transport d'énergie}{4}{subsection.1.1.4}% 
-\contentsline {section}{\numberline {1.2}Modèle polytropique}{4}{section.1.2}% 
-\contentsline {chapter}{\numberline {2}Evolution stellaire}{6}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}La séquence principale}{6}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}La chaîne proton-proton}{6}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Le cycle CNO}{6}{subsection.2.1.2}% 
-\contentsline {subsection}{\numberline {2.1.3}Le diagramme de Hertzsprung-Russell}{7}{subsection.2.1.3}% 
-\contentsline {section}{\numberline {2.2}La phase géante rouge}{8}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Flash de l'hélium}{9}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}AGB (branche asymptotique des géantes)}{10}{subsection.2.2.2}% 
-\contentsline {section}{\numberline {2.3}Les naines blanches}{10}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Evolution tardive des étoiles massives}{11}{section.2.4}% 
-\contentsline {section}{\numberline {2.5}Tableaux récapitulatifs de la nucléosynthèse stellaire}{12}{section.2.5}% 
-\contentsline {chapter}{\numberline {3}Supernovas}{13}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Types de supernovas}{13}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Supernovas à effondrement gravitationnel}{13}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}Supernovas thermonucléaires}{15}{subsection.3.1.2}% 
-\contentsline {section}{\numberline {3.2}Nucléosynthèse lors d'une supernova}{15}{section.3.2}% 
-\contentsline {chapter}{\numberline {4}L'E-ELT}{17}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Les raisons et les technologies nécessaires à la construction de l'E-ELT}{17}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Les instruments}{18}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Comparaison avec d'autres télescopes}{19}{section.4.3}% 
-\contentsline {chapter}{\numberline {5}Enrichissement du milieu interstellaire}{20}{chapter.5}% 
-\contentsline {chapter}{\numberline {6}Conclusion}{16}{chapter.6}% 
-\contentsline {chapter}{\numberline {7}Appendice}{17}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}Modèle polytropique}{17}{section.7.1}% 
-\contentsline {section}{\numberline {7.2}Masse de Chandrasekhar}{18}{section.7.2}% 
+\contentsline {chapter}{\numberline {1}Structure interne des étoiles}{5}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Equilibre thermodynamique}{5}{section.1.1}% 
+\contentsline {subsection}{\numberline {1.1.1}Conservation de la masse}{5}{subsection.1.1.1}% 
+\contentsline {subsection}{\numberline {1.1.2}Equilibre hydrostatique}{6}{subsection.1.1.2}% 
+\contentsline {subsection}{\numberline {1.1.3}Equilibre thermique}{6}{subsection.1.1.3}% 
+\contentsline {subsection}{\numberline {1.1.4}Transport d'énergie}{7}{subsection.1.1.4}% 
+\contentsline {section}{\numberline {1.2}Modèle polytropique}{7}{section.1.2}% 
+\contentsline {chapter}{\numberline {2}Evolution stellaire}{9}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}La séquence principale}{9}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}La chaîne proton-proton}{9}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Le cycle CNO}{9}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Le diagramme de Hertzsprung-Russell}{10}{subsection.2.1.3}% 
+\contentsline {section}{\numberline {2.2}La phase géante rouge}{11}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Flash de l'hélium}{12}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}AGB (branche asymptotique des géantes)}{13}{subsection.2.2.2}% 
+\contentsline {section}{\numberline {2.3}Les naines blanches}{13}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Evolution tardive des étoiles massives}{14}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Tableaux récapitulatifs de la nucléosynthèse stellaire}{15}{section.2.5}% 
+\contentsline {chapter}{\numberline {3}Supernovas}{16}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Types de supernovas}{16}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Supernovas à effondrement gravitationnel}{16}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Supernovas thermonucléaires}{18}{subsection.3.1.2}% 
+\contentsline {section}{\numberline {3.2}Nucléosynthèse lors d'une supernova}{18}{section.3.2}% 
+\contentsline {chapter}{\numberline {4}L'E-ELT}{20}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Les raisons et les technologies nécessaires à la construction de l'E-ELT}{20}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Les instruments}{21}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Comparaison avec d'autres télescopes}{22}{section.4.3}% 
+\contentsline {chapter}{\numberline {5}Enrichissement du milieu interstellaire}{23}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Evolution et rôle du milieu interstellaire}{23}{section.5.1}% 
+\contentsline {section}{\numberline {5.2} L'E-ELT dans ce domaine}{24}{section.5.2}% 
+\contentsline {chapter}{\numberline {A}Modèle polytropique}{26}{appendix.A}% 
+\contentsline {chapter}{\numberline {B}Masse de Chandrasekhar}{27}{appendix.B}% 
 \contentsfinish 

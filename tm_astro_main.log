@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  12 AUG 2019 11:50
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  22 AUG 2019 20:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2269,15 +2269,8 @@ Package: styles/preambule_personnalisation
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
+Package hyperref Info: Option `breaklinks' set `true' on input line 139.
 
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 46.
-
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 47.
-
-Package hyperref Info: Option `breaklinks' set `true' on input line 118.
 (d:/texlive/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
 
@@ -2566,7 +2559,8 @@ Package biblatex Info: ... file 'french.lbx' found.
 (d:/texlive/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/french.lbx
 File: french.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
-(./tm_astro_main.aux (./tm_astro_chap01.aux) (./tm_astro_chap02.aux
+(./tm_astro_main.aux (./tm_astro_abstract.aux) (./tm_astro_intro.aux)
+(./tm_astro_chap01.aux) (./tm_astro_chap02.aux
 
 LaTeX Warning: Label `Fig. 2.7' multiply defined.
 
@@ -2619,7 +2613,7 @@ LaTeX Font Info:    ... okay on input line 12.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(85.35829pt, 455.24408pt, 56.9055pt)
 * v-part:(T,H,B)=(85.35826pt, 682.86613pt, 76.82245pt)
 * \paperwidth=597.50787pt
@@ -2627,13 +2621,13 @@ LaTeX Font Info:    ... okay on input line 12.
 * \textwidth=455.24408pt
 * \textheight=682.86613pt
 * \oddsidemargin=13.0883pt
-* \evensidemargin=13.0883pt
+* \evensidemargin=-15.36449pt
 * \topmargin=-23.91173pt
 * \headheight=15.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
 * \footskip=42.67912pt
-* \marginparwidth=50.0pt
+* \marginparwidth=103.0pt
 * \marginparsep=10.0pt
 * \columnsep=20.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
@@ -2641,8 +2635,8 @@ LaTeX Font Info:    ... okay on input line 12.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -2984,12 +2978,29 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+File: images/e-elt.pdf Graphic file (type pdf)
+<use images/e-elt.pdf>
+ [1
 
+]
 (./tm_astro_main.toc)
 \tf@toc=\write11
 \openout11 = `tm_astro_main.toc'.
 
- [1
+ [2
+
+]
+\openout2 = `tm_astro_abstract.aux'.
+
+ (./tm_astro_abstract.tex) [3
+
+
+]
+\openout2 = `tm_astro_intro.aux'.
+
+ (./tm_astro_intro.tex)
+[4
+
 
 
 ]
@@ -2997,7 +3008,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 
  (./tm_astro_chap01.tex
 Chapitre 1.
-[2
+[5
+
 
 
 ]
@@ -3013,55 +3025,59 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.99991pt on input line 46.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 46.
- [3] [4]) [5]
+ [6] [7]) [8]
 \openout2 = `tm_astro_chap02.aux'.
 
  (./tm_astro_chap02.tex
 Chapitre 2.
-[6
+[9
 
 
 
 ]
 File: images/cno-pp.pdf Graphic file (type pdf)
 <use images/cno-pp.pdf>
- [7]
+ [10]
 File: images/hr-diagram.pdf Graphic file (type pdf)
 <use images/hr-diagram.pdf>
 File: images/compo_sp.pdf Graphic file (type pdf)
 <use images/compo_sp.pdf>
- [8] [9]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+[12]
 File: images/compo_sp_gr.pdf Graphic file (type pdf)
 <use images/compo_sp_gr.pdf>
- [10]
+ [13]
 File: images/m27.pdf Graphic file (type pdf)
 <use images/m27.pdf>
 File: images/oignon.pdf Graphic file (type pdf)
 <use images/oignon.pdf>
- [11]
+ [14]
 File: images/m1.pdf Graphic file (type pdf)
 <use images/m1.pdf>
 File: images/evo_stel_tab.pdf Graphic file (type pdf)
 <use images/evo_stel_tab.pdf>
-) [12]
+) [15]
 \openout2 = `tm_astro_chap03.aux'.
 
  (./tm_astro_chap03.tex
 Chapitre 3.
-[13
+[16
 
 
 
 ]
 File: images/lightcurves.pdf Graphic file (type pdf)
 <use images/lightcurves.pdf>
- [14]
+ [17]
 File: images/lobederoche.pdf Graphic file (type pdf)
 <use images/lobederoche.pdf>
- [15]
+ [18]
 File: images/processusr.pdf Graphic file (type pdf)
 <use images/processusr.pdf>
-) [16]
+) [19]
 \openout2 = `tm_astro_chap04.aux'.
 
  (./tm_astro_chap04.tex
@@ -3074,11 +3090,11 @@ ue actuellement en cours de construc-
 
 File: images/e-elt_i.pdf Graphic file (type pdf)
 <use images/e-elt_i.pdf>
-[17
+[20
 
 
 
-] [18]
+] [21]
 Overfull \hbox (6.38605pt too wide) in paragraph at lines 48--49
 []\TU/lmr/m/n/10.95 A ce jour, le télescope optique terrestre le plus performan
 t est le Very Large Telescope (VLT).Grâce
@@ -3086,12 +3102,21 @@ t est le Very Large Telescope (VLT).Grâce
 
 File: images/comp_tscp.pdf Graphic file (type pdf)
 <use images/comp_tscp.pdf>
-) [19]
+) [22]
 \openout2 = `tm_astro_chap05.aux'.
 
  (./tm_astro_chap05.tex
 Chapitre 5.
-) [20
+File: images/orion.pdf Graphic file (type pdf)
+<use images/orion.pdf>
+[23
+
+
+
+]) [24]
+\openout2 = `tm_astro_conclu.aux'.
+
+ (./tm_astro_conclu.tex) [25
 
 
 
@@ -3099,20 +3124,30 @@ Chapitre 5.
 \openout2 = `tm_astro_appendix.aux'.
 
  (./tm_astro_appendix.tex
-Chapitre 7.
+Annexe A.
 File: images/cylindre.pdf Graphic file (type pdf)
 <use images/cylindre.pdf>
 File: images/graphe_poly.pdf Graphic file (type pdf)
 <use images/graphe_poly.pdf>
-[17
+[26
 
 
 
+]
+Annexe B.
+[27
 
-] [18]) [19] [20
+]) [28]
+Overfull \hbox (15.39775pt too wide) in paragraph at lines 94--94
+[][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [] [] [][][][]
+[] [] [][][] [] [][][][][] [] [][][][][][] [] [][][][][][][][][] [] [][] [] [][
+][][][][][][][][][][][] []
+ []
+
+[29
 
 
-] (./tm_astro_main.lof
+] [30] (./tm_astro_main.lof
 Overfull \hbox (18.92pt too wide) in paragraph at lines 11--11
  [][][][][] [] [] [] [][][][][][] [] [][][][][] [] [][] [] [][][][][][] [] [][]
 [][][][][][][][] [] [][] [] [][][][][] [] [][][] [][] [][][][] [] [][][][][][][
@@ -3130,19 +3165,20 @@ Overfull \hbox (50.5436pt too wide) in paragraph at lines 25--25
 \tf@lof=\write12
 \openout12 = `tm_astro_main.lof'.
 
-Package atenddvi Info: Last page = 25.
- [21
+Package atenddvi Info: Last page = 31.
+ [31
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 51.
- (./tm_astro_main.aux (./tm_astro_chap01.aux) (./tm_astro_chap02.aux)
-(./tm_astro_chap03.aux) (./tm_astro_chap04.aux) (./tm_astro_chap05.aux)
-(./tm_astro_conclu.aux) (./tm_astro_appendix.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 97.
+ (./tm_astro_main.aux (./tm_astro_abstract.aux) (./tm_astro_intro.aux)
+(./tm_astro_chap01.aux) (./tm_astro_chap02.aux) (./tm_astro_chap03.aux)
+(./tm_astro_chap04.aux) (./tm_astro_chap05.aux) (./tm_astro_conclu.aux)
+(./tm_astro_appendix.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `tm_astro_main.out' has not changed.
-(rerunfilecheck)             Checksum: 7C29D6697C65CA43DCF4C953BC90F86E.
+(rerunfilecheck)             Checksum: 9424D16FA7C4622DCE8946348AEC20B4.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3156,12 +3192,12 @@ Package logreq Info: Writing requests to 'tm_astro_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68302 strings out of 492933
- 1346791 string characters out of 6133145
- 2107015 words of memory out of 5000000
- 71167 multiletter control sequences out of 15000+600000
- 552695 words of font info for 199 fonts, out of 8000000 for 9000
+ 68352 strings out of 492933
+ 1348132 string characters out of 6133145
+ 2118827 words of memory out of 5000000
+ 71197 multiletter control sequences out of 15000+600000
+ 552711 words of font info for 201 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,15n,109p,1956b,33194s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,15n,109p,2090b,33194s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tm_astro_main.pdf (25 pages).
+Output written on tm_astro_main.pdf (31 pages).

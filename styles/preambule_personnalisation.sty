@@ -79,6 +79,27 @@
 		{20pt}								% après
 		[0cm]								% à droite
 }
+
+\newcommand{\chapterFormats}{%
+	\titleformat{\chapter}[display]
+	{\normalfont\Huge\bfseries}
+	{\fontsize{100pt}{100pt}\selectfont\raggedright\thechapter}
+	{1em}
+	{\vspace{-3.7cm}\filleft\Huge}
+	[{\titlerule}]
+	
+	\titlespacing{\chapter}					% régler l'espacement autour du titre de chapitre
+	{0pt}								% à gauche
+	{-18pt}								% avant
+	{20pt}								% après
+	[0cm]								% à droite
+}
+
+
+
+
+
+
 % Pour les annexes
 \newcommand{\appendixFormat}{%
 	\titleformat{\chapter}[frame]			% frame pour avoir un cadre

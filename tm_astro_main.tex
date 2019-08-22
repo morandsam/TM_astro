@@ -1,20 +1,62 @@
 % !TeX encoding = UTF-8
 % !TeX program = xelatex
 % !TeX spellcheck = fr
-\documentclass[11pt,a4paper]{report}
+\documentclass[11pt,a4paper,twoside]{report}
 \usepackage{styles/preambule_college}
 \usepackage{styles/preambule_personnalisation}
 \usepackage[version=4]{mhchem}
-%\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 
-\includeonly{tm_astro_chap01,tm_astro_chap02,tm_astro_chap03,tm_astro_chap04,tm_astro_chap05,tm_astro_appendix}
+\bibliography{TM}
 
 \begin{document}
+
+\begin{titlepage} 
+	
+	\centering 
+	
+	\scshape 
+	
+	\vspace*{\baselineskip}
+	
+	\rule{\textwidth}{0.4pt} 
+	
+	\vspace{0.75\baselineskip} 
+	
+	{\LARGE Approche théorique de la mort des étoiles et étude de l'enrichissement du milieu interstellaire à travers l'e-elt} 
+	
+	\vspace{0.75\baselineskip} 
+	
+	\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} 
+	
+	\vspace{2\baselineskip} 
+	
+	TM\_Astro\_TR\_03
+	
+	\vspace*{2\baselineskip} 
+	
+	{\scshape\Large Samuel Morand \\ Professeur accompagant: Romaine Theler \\} 
+	
+	\vspace*{2\baselineskip}
+	
+	\textit{Lycée-collège des Creusets \\ Sion} 
+	
+	\vspace{3cm}
+	
+	\includegraphics[scale=1]{images/e-elt}
+	
+	\vfill 
+	
+	07.10.2019
+
+\end{titlepage}
 
 \tableofcontents
 
 \chapterFormat
 
+\include{tm_astro_abstract}
+\include{tm_astro_intro}
 \include{tm_astro_chap01}
 \include{tm_astro_chap02}
 \include{tm_astro_chap03}
@@ -41,8 +83,12 @@
 \nocite{TelescopeGeantEuropeen2019}
 \nocite{brissonELTDerniereGeneration2017}
 \nocite{hugotPolissageSousContraintes2015}
-\nocite{informationeso.orgFirstInstrumentsEELT}
 \nocite{MasseChandrasekhar2019}
+\nocite{montargesPerteMasseEtoiles}
+\nocite{DisqueProtoplanetaire2019}
+\nocite{hookSupernovaeCosmologyFuture2013}
+\nocite{informationeso.orgFirstInstrumentsEELT}
+\nocite{e-eltscienceofficeESOEELTScience}
 
 \printbibliography
 
