@@ -9,6 +9,15 @@
 
 \bibliography{TM}
 
+\makeatletter
+\newcommand{\addloflink}[1]{% \addloflink{<URL>}
+	\addtocontents{lof}{\begingroup\def\protect\@dotsep{10000}% Remove dots in LoF for this entry
+		\protect\contentsline{figlink}{\protect\numberline{}\url{#1}}{}{}%
+		\endgroup}% Restore dots in LoF for future entries
+}
+\newcommand{\l@figlink}{\@dottedtocline{1}{1.5em}{2.3em}}
+\makeatother
+
 \begin{document}
 
 \begin{titlepage} 
@@ -29,21 +38,29 @@
 	
 	\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} 
 	
-	\vspace{2\baselineskip} 
+	\vspace{2.5\baselineskip} 
 	
 	TM\_Astro\_TR\_03
 	
-	\vspace*{2\baselineskip} 
+	\vspace*{2.5\baselineskip} 
 	
-	{\scshape\Large Samuel Morand \\ Professeur accompagant: Romaine Theler \\} 
+	{\scshape\Large Samuel Morand \\}
 	
-	\vspace*{2\baselineskip}
-	
-	\textit{Lycée-collège des Creusets \\ Sion} 
-	
-	\vspace{3cm}
+	\vspace{0.75\baselineskip} 
+
+	{\scshape\Large 5D Physique - Applications des Mathématiques\\}
+
+	\vspace*{4\baselineskip}
 	
 	\includegraphics[scale=1]{images/e-elt}
+
+	\vspace*{4\baselineskip}
+	
+	{\scshape\Large Professeur accompagant: Romaine Theler\\}
+	
+	\vspace*{3\baselineskip}
+	
+	{\scshape\ Lycée-collège des Creusets \\ Sion} 
 	
 	\vfill 
 	
@@ -51,47 +68,45 @@
 
 \end{titlepage}
 
+\cleardoublepage
+
+\TOCFormat
+
+\include{tm_astro_abstract}
+
 \tableofcontents
+
+
+\setcounter{page}{0}
+
+\thispagestyle{empty}
+
+\include{tm_astro_intro}
 
 \chapterFormat
 
-\include{tm_astro_abstract}
-\include{tm_astro_intro}
 \include{tm_astro_chap01}
 \include{tm_astro_chap02}
 \include{tm_astro_chap03}
 \include{tm_astro_chap04}
 \include{tm_astro_chap05}
-\include{tm_astro_conclu}
-\include{tm_astro_appendix}
 
-\nocite{esslingerSupergeantes}
-\nocite{comtegeorgesSyntheseElementsChimiques}
-\nocite{esslingerGeantesRouges}
-\nocite{esslingerNebuleusesPlanetaires}
-\nocite{prialnikIntroductionTheoryStellar2009}
-\nocite{audouzeAstrophysiqueNucleaire2003}
-\nocite{branchSupernovaExplosions2017}
-\nocite{bouquetINTRODUCTIONAUXSUPERNOVAE}
-\nocite{FaconVivrePropre}
-\nocite{courbinfredericPolycopieAstroIEPFL}
-\nocite{EquationEtatInterieur}
-\nocite{petriPhysiqueStellaire}
-\nocite{prof.shudemaoStellarEquationPdf}
-\nocite{dr.balsaterzicLecture23Pdf}
-\nocite{informationeso.orgExtremelyLargeTelescope}
-\nocite{TelescopeGeantEuropeen2019}
-\nocite{brissonELTDerniereGeneration2017}
-\nocite{hugotPolissageSousContraintes2015}
-\nocite{MasseChandrasekhar2019}
-\nocite{montargesPerteMasseEtoiles}
-\nocite{DisqueProtoplanetaire2019}
-\nocite{hookSupernovaeCosmologyFuture2013}
-\nocite{informationeso.orgFirstInstrumentsEELT}
-\nocite{e-eltscienceofficeESOEELTScience}
+\TOCFormat
+
+\include{tm_astro_conclu}
+
+\nocite{*}
+
+\chapterFormat
 
 \printbibliography
 
+\addcontentsline{toc}{chapter}{Bibliographie}
+
 \listoffigures
+
+\addcontentsline{toc}{chapter}{Table des figures}
+
+\include{tm_astro_appendix}
 
 \end{document}

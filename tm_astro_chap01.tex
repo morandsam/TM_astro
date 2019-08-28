@@ -10,7 +10,7 @@ Dans ce premier chapitre, nous allons tout d'abord traiter de la structure inter
 
 \section{Equilibre thermodynamique}\label{1.1}
 
-Les étoiles naissent de l'effondrement gravitationnel d'un nuage de gaz interstellaire (§\ref{4}). Au début de leur vie, elles sont principalement composées d'hydrogène qu'elles transformeront progressivement en hélium (§\ref{2}). Cependant, le processus de transformation de l'hydrogène en hélium peut durer des milliards d'années, c'est pourquoi il est intéressant d'étudier la raison pour laquelle une étoile peut conserver cet état pendant une telle durée. En effet, mis à part sa composition chimique, les caractéristiques d'une étoile n'évoluent guère tout au long de la séquence principale\footnotemark[1]; elle se trouve donc dans un certain équilibre qui est qualifié de thermodynamique et de local. La définition d'un équilibre thermodynamique local stipule que les paramètres caractérisant un objet peuvent varier, mais que cette variation est si infime et si lente que nous pouvons donc considérer qu'en chaque point de l'objet, son entourage proche est en équilibre avec lui. Les observables caractérisant cet équilibre sont la pression, la température, la luminosité ainsi que la masse. A chacune de ces observables correspond une équation constituant l'équilibre thermodynamique local.
+Les étoiles naissent de l'effondrement gravitationnel d'un nuage de gaz interstellaire (§\ref{5}). Au début de leur vie, elles sont principalement composées d'hydrogène qu'elles transformeront progressivement en hélium (§\ref{2}). Cependant, le processus de transformation de l'hydrogène en hélium peut durer des milliards d'années, c'est pourquoi il est intéressant d'étudier la raison pour laquelle une étoile peut conserver cet état pendant une telle durée. En effet, mis à part sa composition chimique, les caractéristiques d'une étoile n'évoluent guère tout au long de la séquence principale\footnotemark[1]; elle se trouve donc dans un certain équilibre qui est qualifié de thermodynamique et de local. La définition d'un équilibre thermodynamique local stipule que les paramètres caractérisant un objet peuvent varier, mais que cette variation est si infime et si lente que nous pouvons donc considérer qu'en chaque point de l'objet, son entourage proche est en équilibre avec lui. Les observables caractérisant cet équilibre sont la pression, la température, la luminosité ainsi que la masse. A chacune de ces observables correspond une équation constituant l'équilibre thermodynamique local.
 
 \subsection{Conservation de la masse}\label{1.1.1}
 Cette première équation, appelée équation de continuité de la masse, exprime le principe de conservation de la masse. En effet, la masse d'une étoile reste inchangée durant toute la séquence principale.\smallskip\newline
@@ -34,14 +34,14 @@ Si un objet ressemble à une sphère et ne varie pas significativement de taille
 
 L'autre force correspond à la force de pression générée par le gaz composant l'étoile.\smallskip
 
-Considérons un cylindre de volume infinitésimal de base \textit{dS} et de hauteur \textit{dr} (Fig. \ref{Fig. 7.1}); sa masse vaut:\begin{equation}dm=dr\hspace{1pt}dS\hspace{1pt}\rho\label{Eq. 1.5}\end{equation} 
+Considérons un cylindre de volume infinitésimal de base \textit{dS} et de hauteur \textit{dr} (Fig. \ref{Fig. A.1}); sa masse vaut:\begin{equation}dm=dr\hspace{1pt}dS\hspace{1pt}\rho\label{Eq. 1.5}\end{equation} 
 
 Avec P étant la force de pression radiative et $\ddot{r}$ l'accélération, la deuxième loi de Newton nous permet
 d'écrire\footnotemark[3]:\begin{equation}-\dfrac{G\hspace{1pt}m\hspace{1pt}dm}{r^{2}}-\dfrac{dP(r)}{dr}dr\hspace{1pt}dS=\ddot r\hspace{1pt}dm\label{Eq. 1.6}\end{equation}
 
 Grâce l'Eq. \ref{Eq. 1.5} nous pouvons remplacer \textit{dr\hspace{1pt}dS} dans l'Eq. \ref{Eq. 1.6} et ensuite simplifier le tout par \textit{dm}. De plus, comme l'étoile est en équilibre, nous pouvons affirmer que son accélération est nulle; en réarrangeant les termes nous obtenons:\begin{equation}\boxed{\dfrac{dP(r)}{dr}=-\rho\hspace{2pt}\frac{Gm}{r^{2}}}\label{Eq. 1.7}\end{equation}
 
-En résumé, l'Eq. \ref{Eq. 1.7} nous dit mathématiquement que si la force gravitationnelle et la pression radiative sont opposées et de même intensité, alors l'étoile sera parfaitement équilibrée (Fig. \ref{Fig. 7.1}).
+En résumé, l'Eq. \ref{Eq. 1.7} nous dit mathématiquement que si la force gravitationnelle et la pression radiative sont opposées et de même intensité, alors l'étoile sera parfaitement équilibrée (Fig. \ref{Fig. A.1}).
 
 \footnotetext[3]{La force de pression agissant sur un élément $dr$ correspond à $P(r)dS-P(r+dr)dS=-\dfrac{dP}{dr}drdS$}
 
@@ -99,7 +99,7 @@ La masse $M$ d'une étoile s'obtient en combinant l'Eq. \ref{Eq. 1.3} et l'Eq. \
 
 En substituant par l'Eq. \ref{Eq. 1.19} nous obtenons:\begin{equation}M=-4\pi \alpha^{3}\rho_{c}\int_{0}^{\xi_{1}}\dfrac{d}{d\xi}\left(\xi^2\dfrac{d\theta}{d\xi}\right)d\xi=-4\pi \alpha^{3}\rho_{c}\xi^{2}_{1}\left( \dfrac{d\theta}{d\xi}\right)_{\xi_{1}}\label{Eq. 1.22}\end{equation}\bigskip
 
-Afin d'obtenir la valeur de $\xi_{1}$ qui nous permet de calculer le rayon et la masse d'une étoile, il faut résoudre l'équation de Lane-Emden (Eq. \ref{Eq. 1.19}) en fonction de l'indice polytropique $n$ choisi (Fig. \ref{Fig. 7.2}). Il est possible de résoudre analytiquement cette équation, pour certaines valeurs de $n$, tandis que pour d'autres nous sommes obligés d'avoir recours à des méthodes numériques.\smallskip 
+Afin d'obtenir la valeur de $\xi_{1}$ qui nous permet de calculer le rayon et la masse d'une étoile, il faut résoudre l'équation de Lane-Emden (Eq. \ref{Eq. 1.19}) en fonction de l'indice polytropique $n$ choisi (Fig. \ref{Fig. A.2}). Il est possible de résoudre analytiquement cette équation, pour certaines valeurs de $n$, tandis que pour d'autres nous sommes obligés d'avoir recours à des méthodes numériques.\smallskip 
 
 L'inconvénient du modèle polytropique est qu'il se restreint à une sphère parfaite et sans rotation, ce qui est une bonne approximation, mais qui n'est jamais parfaitement le cas en réalité. De plus, l'indice polytropique $n$ ne permet pas de simuler n'importe quelle composition d'étoile. Il est par contre extrêmement utile, par exemple, pour décrire des étoiles de type naine blanche. 
 

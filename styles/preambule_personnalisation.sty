@@ -22,8 +22,8 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypersetup{
 	pdftitle={TM-ASTRO-TR-03},
-	pdfsubject={travail de maturité sur la mort des étoiles massives et les avancées attendues par l'E-ELT dans le domaine de l'enrichissement du milieu interstellaire},
-	pdfkeywords={LaTeX} {Collège} {college} {LaTeX} {astrophysics} {star} {astronomy} {elt},
+	pdfsubject={Approche théorique de la mort des étoiles et étude de l'enrichissement du milieu interstellaire à travers l'E-ELT},
+	pdfkeywords={LaTeX} {Collège} {college} {LaTeX} {astrophysics} {star} {astronomy} {elt} {e-elt},
 	pdfauthor={Samuel Morand}
 }
 
@@ -80,7 +80,7 @@
 		[0cm]								% à droite
 }
 
-\newcommand{\chapterFormats}{%
+\newcommand{\chapterFormatfive}{%
 	\titleformat{\chapter}[display]
 	{\normalfont\Huge\bfseries}
 	{\fontsize{100pt}{100pt}\selectfont\raggedright\thechapter}
@@ -95,8 +95,20 @@
 	[0cm]								% à droite
 }
 
-
-
+\newcommand{\TOCFormat}{%
+	\titleformat{\chapter}[display]
+	{\normalfont\Huge\bfseries}
+	{\fontsize{100pt}{100pt}\selectfont\raggedright\thechapter}
+	{1em}
+	{\vspace{-1.0cm}\filleft\Huge}
+	[{\titlerule}]
+	
+	\titlespacing{\chapter}					% régler l'espacement autour du titre de chapitre
+	{0pt}								% à gauche
+	{-18pt}								% avant
+	{60pt}								% après
+	[0cm]								% à droite
+}
 
 
 

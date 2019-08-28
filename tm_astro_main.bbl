@@ -59,30 +59,6 @@
       \true{nocite}
       \keyw{Astrophysique nucléaire}
     \endentry
-    \entry{bouquetINTRODUCTIONAUXSUPERNOVAE}{article}{}
-      \name{author}{1}{}{%
-        {{hash=feb93420f3db326089da98b2f08274ee}{%
-           family={Bouquet},
-           familyi={B\bibinitperiod},
-           given={Alain},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{feb93420f3db326089da98b2f08274ee}
-      \strng{fullhash}{feb93420f3db326089da98b2f08274ee}
-      \strng{bibnamehash}{feb93420f3db326089da98b2f08274ee}
-      \strng{authorbibnamehash}{feb93420f3db326089da98b2f08274ee}
-      \strng{authornamehash}{feb93420f3db326089da98b2f08274ee}
-      \strng{authorfullhash}{feb93420f3db326089da98b2f08274ee}
-      \field{sortinit}{B}
-      \field{sortinithash}{276475738cc058478c1677046f857703}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{french}
-      \field{title}{INTRODUCTION AUX SUPERNOVAE}
-      \true{nocite}
-      \field{pages}{48}
-      \range{pages}{1}
-    \endentry
     \entry{branchSupernovaExplosions2017}{book}{}
       \name{author}{2}{}{%
         {{hash=7f0fe96ca92e2c419da15fa084b2ed48}{%
@@ -201,13 +177,13 @@
       \verb https://slideplayer.fr/slide/1139670/
       \endverb
     \endentry
-    \entry{DisqueProtoplanetaire2019}{inreference}{}
+    \entry{DisqueProtoplanetaire2019}{online}{}
       \field{sortinit}{D}
       \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Wikipédia}
       \field{day}{8}
       \field{hour}{14}
+      \field{journaltitle}{Wikipédia}
       \field{langid}{french}
       \field{minute}{6}
       \field{month}{5}
@@ -402,7 +378,7 @@
       \field{title}{Polycopié\_AstroI\_EPFL.pdf}
       \true{nocite}
     \endentry
-    \entry{hookSupernovaeCosmologyFuture2013}{article}{}
+    \entry{hookSupernovaeCosmologyFuture2013}{online}{}
       \name{author}{1}{}{%
         {{hash=66c4cff302392cabcaf22a019c27281f}{%
            family={Hook},
@@ -423,24 +399,16 @@
       \field{annotation}{Comment: To appear in proceedings of the Royal Society scientific discussion meeting "New windows on transients across the Universe", 23-24 April 2012}
       \field{day}{13}
       \field{eprinttype}{arxiv}
-      \field{issn}{1364-503X, 1471-2962}
-      \field{journaltitle}{Proc. R. Soc. A}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
       \field{month}{6}
-      \field{number}{1992}
       \field{title}{Supernovae and {{Cosmology}} with {{Future European Facilities}}}
       \field{urlday}{21}
       \field{urlmonth}{8}
       \field{urlyear}{2019}
-      \field{volume}{371}
       \field{year}{2013}
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \true{nocite}
-      \field{pages}{20120282}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1098/rsta.2012.0282
-      \endverb
       \verb{eprint}
       \verb 1211.6586
       \endverb
@@ -452,7 +420,7 @@
       \endverb
       \keyw{Astrophysics - Cosmology and Nongalactic Astrophysics}
     \endentry
-    \entry{hugotPolissageSousContraintes2015}{article}{}
+    \entry{hugotPolissageSousContraintes2015}{online}{}
       \name{author}{1}{}{%
         {{hash=24514c98caa68109463b511cf7856ad7}{%
            family={Hugot},
@@ -470,11 +438,9 @@
       \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1629-4475, 2269-8418}
       \field{journaltitle}{Photoniques}
       \field{langid}{french}
       \field{month}{5}
-      \field{number}{76}
       \field{title}{Le polissage sous contraintes}
       \field{urlday}{1}
       \field{urlmonth}{8}
@@ -483,48 +449,11 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \true{nocite}
-      \field{pages}{36\bibrangedash 38}
-      \range{pages}{3}
-      \verb{doi}
-      \verb 10.1051/photon/20157636
-      \endverb
       \verb{urlraw}
       \verb http://www.photoniques.com/10.1051/photon/20157636
       \endverb
       \verb{url}
       \verb http://www.photoniques.com/10.1051/photon/20157636
-      \endverb
-    \endentry
-    \entry{informationeso.orgFirstInstrumentsEELT}{online}{}
-      \name{author}{1}{}{%
-        {{hash=6c4e014a0f3df1274602bd352cb2a655}{%
-           family={{information@eso.org}},
-           familyi={i\bibinitperiod}}}%
-      }
-      \strng{namehash}{6c4e014a0f3df1274602bd352cb2a655}
-      \strng{fullhash}{6c4e014a0f3df1274602bd352cb2a655}
-      \strng{bibnamehash}{6c4e014a0f3df1274602bd352cb2a655}
-      \strng{authorbibnamehash}{6c4e014a0f3df1274602bd352cb2a655}
-      \strng{authornamehash}{6c4e014a0f3df1274602bd352cb2a655}
-      \strng{authorfullhash}{6c4e014a0f3df1274602bd352cb2a655}
-      \field{extraname}{1}
-      \field{sortinit}{i}
-      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{www.eso.org}
-      \field{langid}{french}
-      \field{title}{First Instruments for E-ELT Approved}
-      \field{urlday}{3}
-      \field{urlmonth}{8}
-      \field{urlyear}{2019}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www.eso.org/public/announcements/ann15056/
-      \endverb
-      \verb{url}
-      \verb https://www.eso.org/public/announcements/ann15056/
       \endverb
     \endentry
     \entry{informationeso.orgExtremelyLargeTelescope}{online}{}
@@ -539,7 +468,6 @@
       \strng{authorbibnamehash}{6c4e014a0f3df1274602bd352cb2a655}
       \strng{authornamehash}{6c4e014a0f3df1274602bd352cb2a655}
       \strng{authorfullhash}{6c4e014a0f3df1274602bd352cb2a655}
-      \field{extraname}{2}
       \field{sortinit}{i}
       \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
       \field{labelnamesource}{author}
@@ -558,13 +486,13 @@
       \verb https://www.eso.org/public/teles-instr/elt/
       \endverb
     \endentry
-    \entry{MasseChandrasekhar2019}{inreference}{}
+    \entry{MasseChandrasekhar2019}{online}{}
       \field{sortinit}{M}
       \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Wikipédia}
       \field{day}{31}
       \field{hour}{10}
+      \field{journaltitle}{Wikipédia}
       \field{langid}{french}
       \field{minute}{46}
       \field{month}{1}
@@ -586,7 +514,7 @@
       \verb https://fr.wikipedia.org/w/index.php?title=Masse_de_Chandrasekhar&oldid=156333291
       \endverb
     \endentry
-    \entry{montargesPerteMasseEtoiles}{article}{}
+    \entry{montargesPerteMasseEtoiles}{online}{}
       \name{author}{1}{}{%
         {{hash=ab8abb5ffb5e8ab2778135f8d66a1b66}{%
            family={Montargès},
@@ -605,34 +533,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{french}
-      \field{title}{Perte de masse des étoiles massives évoluées : l'environnement circumstellaire à haute résolution angulaire}
+      \field{title}{Perte de masse des étoiles massives évoluées : l'environnement circumstellaire à haute résolution angulaire.pdf}
       \true{nocite}
-      \field{pages}{218}
-      \range{pages}{1}
-    \endentry
-    \entry{petriPhysiqueStellaire}{article}{}
-      \name{author}{1}{}{%
-        {{hash=213ec240aeda35bcaae06715bcd7442c}{%
-           family={Pétri},
-           familyi={P\bibinitperiod},
-           given={Jérôme},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{213ec240aeda35bcaae06715bcd7442c}
-      \strng{fullhash}{213ec240aeda35bcaae06715bcd7442c}
-      \strng{bibnamehash}{213ec240aeda35bcaae06715bcd7442c}
-      \strng{authorbibnamehash}{213ec240aeda35bcaae06715bcd7442c}
-      \strng{authornamehash}{213ec240aeda35bcaae06715bcd7442c}
-      \strng{authorfullhash}{213ec240aeda35bcaae06715bcd7442c}
-      \field{sortinit}{P}
-      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{french}
-      \field{title}{Physique stellaire}
-      \true{nocite}
-      \field{pages}{285}
-      \range{pages}{1}
     \endentry
     \entry{prialnikIntroductionTheoryStellar2009}{book}{}
       \name{author}{1}{}{%
@@ -697,13 +599,13 @@
       \verb http://www.jb.man.ac.uk/~smao/starHtml/stellarEquation.pdf
       \endverb
     \endentry
-    \entry{TelescopeGeantEuropeen2019}{inreference}{}
+    \entry{TelescopeGeantEuropeen2019}{online}{}
       \field{sortinit}{T}
       \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Wikipédia}
       \field{day}{9}
       \field{hour}{16}
+      \field{journaltitle}{Wikipédia}
       \field{langid}{french}
       \field{minute}{44}
       \field{month}{7}
@@ -775,6 +677,8 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{bouquetINTRODUCTIONAUXSUPERNOVAE}
+  \missing{petriPhysiqueStellaire}
 \endrefsection
 \endinput
 
