@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  28 AUG 2019 18:38
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  31 AUG 2019 14:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3224,10 +3224,10 @@ Package logreq Info: Writing requests to 'tm_astro_main.run.xml'.
 Here is how much of TeX's memory you used:
  68348 strings out of 492933
  1347754 string characters out of 6133145
- 2116254 words of memory out of 5000000
+ 2117254 words of memory out of 5000000
  71193 multiletter control sequences out of 15000+600000
  552711 words of font info for 201 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,15n,109p,2098b,33192s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,15n,109p,2099b,33192s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on tm_astro_main.pdf (31 pages).
