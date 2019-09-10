@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  2 SEP 2019 23:02
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.2.20)  10 SEP 2019 18:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3077,9 +3077,6 @@ Overfull \hbox (27.99979pt too wide) in paragraph at lines 139--140
 
  (./tm_astro_chap03.tex
 Chapitre 3.
-
-LaTeX Warning: Reference `7.2' on page 13 undefined on input line 17.
-
 [13
 
 
@@ -3111,11 +3108,6 @@ File: images/e-elt_i.pdf Graphic file (type pdf)
 
 
 ] [18]
-Overfull \hbox (6.38605pt too wide) in paragraph at lines 51--52
-[]\TU/lmr/m/n/10.95 A ce jour, le télescope optique terrestre le plus performan
-t est le Very Large Telescope (VLT).Grâce
- []
-
 File: images/comp_tscp.pdf Graphic file (type pdf)
 <use images/comp_tscp.pdf>
 ) [19]
@@ -3267,20 +3259,17 @@ Package rerunfilecheck Info: File `tm_astro_main.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.63126pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'tm_astro_main.run.xml'.
 \openout1 = `tm_astro_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68372 strings out of 492933
- 1348172 string characters out of 6133145
+ 68371 strings out of 492933
+ 1348167 string characters out of 6133145
  2120736 words of memory out of 5000000
- 71212 multiletter control sequences out of 15000+600000
+ 71211 multiletter control sequences out of 15000+600000
  552711 words of font info for 201 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,15n,109p,2076b,33192s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,15n,109p,2082b,33192s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on tm_astro_main.pdf (33 pages).
